@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>font-awesome</title>
+    <style>
+        html, body, .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        ul, li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a, a:hover, a:visited, a:link, a:active {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .container aside {
+            width: 230px;
+            height: 100%;
+            position: fixed;
+            color: rgb(191, 203, 217);
+            background-color: rgb(48, 65, 86);
+        }
+
+        .container aside .menu-item {
+            display: flex;
+            width: 100%;
+            height: 48px;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .container aside a {
+            color: rgb(191, 203, 217);
+        }
+
+        .container aside a:hover {
+            color: rgb(64, 158, 255);
+            background-color: #1f2d3d;
+        }
+
+        .container article {
+            margin-left: 230px;
+            padding: 20px 40px;
+            background-color: #f8f9fa;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        h2.page-header {
+            padding-left: 12px;
+            padding-bottom: 9px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #eee
+        }
+
+        ul.icon-list {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            color: #495057;
+        }
+
+        li.icon-item {
+            display: flex;
+            margin-bottom: 1rem;
+            border-radius: .25rem;
+        }
+
+        li.icon-item:hover {
+            background-color: #fff;
+            position: relative;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transform: translateZ(0);
+        }
+
+        li.icon-item:hover::after {
+            content: '';
+            box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            z-index: -1;
+            transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        li.icon-item .icon-item-icon {
+            cursor: pointer;
+            font-size: 32px;
+            width: 5rem;
+            min-height: 3.5rem;
+            border-radius: .25rem 0 0 .25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li.icon-item .icon-item-icon:hover {
+            color: #ffffff;
+            background-color: #4dabf7;
+        }
+
+        li.icon-item .icon-item-name {
+            font-size: .8rem;
+            padding: .25rem 1rem .25rem .25rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        li.icon-item .icon-item-name span {
+            color: #adb5bd;
+            display: block;
+        }
+
+        @media screen and (min-width: 77.5rem) {
+            li.icon-item {
+                width: calc(100% / 6);
+            }
+        }
+
+        @media screen and (max-width: 77.5rem) {
+            li.icon-item {
+                width: calc(100% / 4);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <aside>
+        <a class="menu-item" href="#web-application">
+            <span>Web Application Icons</span>
+        </a>
+        <a class="menu-item" href="#accessibility">
+            <span>Accessibility Icons</span>
+        </a>
+        <a class="menu-item" href="#hand">
+            <span>Hand Icons</span>
+        </a>
+        <a class="menu-item" href="#transportation">
+            <span>Transportation Icons</span>
+        </a>
+        <a class="menu-item" href="#gender">
+            <span>Gender Icons</span>
+        </a>
+        <a class="menu-item" href="#file-type">
+            <span>File Type Icons</span>
+        </a>
+        <a class="menu-item" href="#spinner">
+            <span>Spinner Icons</span>
+        </a>
+        <a class="menu-item" href="#form-control">
+            <span>Form Control Icons</span>
+        </a>
+        <a class="menu-item" href="#payment">
+            <span>Payment Icons</span>
+        </a>
+        <a class="menu-item" href="#chart">
+            <span>Chart Icons</span>
+        </a>
+        <a class="menu-item" href="#currency">
+            <span>Currency Icons</span>
+        </a>
+        <a class="menu-item" href="#text-editor">
+            <span>Text Editor Icons</span>
+        </a>
+        <a class="menu-item" href="#directional">
+            <span>Directional Icons</span>
+        </a>
+        <a class="menu-item" href="#video-player">
+            <span>Video Player Icons</span>
+        </a>
+        <a class="menu-item" href="#brand">
+            <span>Brand Icons</span>
+        </a>
+        <a class="menu-item" href="#medical">
+            <span>Medical Icons</span>
+        </a>
+    </aside>
+    <article>
+        <section id="web-application">
+            <h2 class="page-header">Web Application Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-address-book"><div class="icon-item-icon"><i class="fa fa-address-book"></i></div><div class="icon-item-name"><span>address-book</span></div></li>
+                <li class="icon-item" data-class="fa fa-address-book-o"><div class="icon-item-icon"><i class="fa fa-address-book-o"></i></div><div class="icon-item-name"><span>address-book-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-address-card"><div class="icon-item-icon"><i class="fa fa-address-card"></i></div><div class="icon-item-name"><span>address-card</span></div></li>
+                <li class="icon-item" data-class="fa fa-address-card-o"><div class="icon-item-icon"><i class="fa fa-address-card-o"></i></div><div class="icon-item-name"><span>address-card-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-adjust"><div class="icon-item-icon"><i class="fa fa-adjust"></i></div><div class="icon-item-name"><span>adjust</span></div></li>
+                <li class="icon-item" data-class="fa fa-american-sign-language-interpreting"><div class="icon-item-icon"><i class="fa fa-american-sign-language-interpreting"></i></div><div class="icon-item-name"><span>american-sign-language-interpreting</span></div></li>
+                <li class="icon-item" data-class="fa fa-anchor"><div class="icon-item-icon"><i class="fa fa-anchor"></i></div><div class="icon-item-name"><span>anchor</span></div></li>
+                <li class="icon-item" data-class="fa fa-archive"><div class="icon-item-icon"><i class="fa fa-archive"></i></div><div class="icon-item-name"><span>archive</span></div></li>
+                <li class="icon-item" data-class="fa fa-area-chart"><div class="icon-item-icon"><i class="fa fa-area-chart"></i></div><div class="icon-item-name"><span>area-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows"><div class="icon-item-icon"><i class="fa fa-arrows"></i></div><div class="icon-item-name"><span>arrows</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows-h"><div class="icon-item-icon"><i class="fa fa-arrows-h"></i></div><div class="icon-item-name"><span>arrows-h</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows-v"><div class="icon-item-icon"><i class="fa fa-arrows-v"></i></div><div class="icon-item-name"><span>arrows-v</span></div></li>
+                <li class="icon-item" data-class="fa fa-asl-interpreting"><div class="icon-item-icon"><i class="fa fa-asl-interpreting"></i></div><div class="icon-item-name"><span>asl-interpreting</span></div></li>
+                <li class="icon-item" data-class="fa fa-assistive-listening-systems"><div class="icon-item-icon"><i class="fa fa-assistive-listening-systems"></i></div><div class="icon-item-name"><span>assistive-listening-systems</span></div></li>
+                <li class="icon-item" data-class="fa fa-asterisk"><div class="icon-item-icon"><i class="fa fa-asterisk"></i></div><div class="icon-item-name"><span>asterisk</span></div></li>
+                <li class="icon-item" data-class="fa fa-at"><div class="icon-item-icon"><i class="fa fa-at"></i></div><div class="icon-item-name"><span>at</span></div></li>
+                <li class="icon-item" data-class="fa fa-audio-description"><div class="icon-item-icon"><i class="fa fa-audio-description"></i></div><div class="icon-item-name"><span>audio-description</span></div></li>
+                <li class="icon-item" data-class="fa fa-automobile"><div class="icon-item-icon"><i class="fa fa-automobile"></i></div><div class="icon-item-name"><span>automobile</span></div></li>
+                <li class="icon-item" data-class="fa fa-balance-scale"><div class="icon-item-icon"><i class="fa fa-balance-scale"></i></div><div class="icon-item-name"><span>balance-scale</span></div></li>
+                <li class="icon-item" data-class="fa fa-ban"><div class="icon-item-icon"><i class="fa fa-ban"></i></div><div class="icon-item-name"><span>ban</span></div></li>
+                <li class="icon-item" data-class="fa fa-bank"><div class="icon-item-icon"><i class="fa fa-bank"></i></div><div class="icon-item-name"><span>bank</span></div></li>
+                <li class="icon-item" data-class="fa fa-bar-chart"><div class="icon-item-icon"><i class="fa fa-bar-chart"></i></div><div class="icon-item-name"><span>bar-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-bar-chart-o"><div class="icon-item-icon"><i class="fa fa-bar-chart-o"></i></div><div class="icon-item-name"><span>bar-chart-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-barcode"><div class="icon-item-icon"><i class="fa fa-barcode"></i></div><div class="icon-item-name"><span>barcode</span></div></li>
+                <li class="icon-item" data-class="fa fa-bars"><div class="icon-item-icon"><i class="fa fa-bars"></i></div><div class="icon-item-name"><span>bars</span></div></li>
+                <li class="icon-item" data-class="fa fa-bath"><div class="icon-item-icon"><i class="fa fa-bath"></i></div><div class="icon-item-name"><span>bath</span></div></li>
+                <li class="icon-item" data-class="fa fa-bathtub"><div class="icon-item-icon"><i class="fa fa-bathtub"></i></div><div class="icon-item-name"><span>bathtub</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery"><div class="icon-item-icon"><i class="fa fa-battery"></i></div><div class="icon-item-name"><span>battery</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-0"><div class="icon-item-icon"><i class="fa fa-battery-0"></i></div><div class="icon-item-name"><span>battery-0</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-1"><div class="icon-item-icon"><i class="fa fa-battery-1"></i></div><div class="icon-item-name"><span>battery-1</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-2"><div class="icon-item-icon"><i class="fa fa-battery-2"></i></div><div class="icon-item-name"><span>battery-2</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-3"><div class="icon-item-icon"><i class="fa fa-battery-3"></i></div><div class="icon-item-name"><span>battery-3</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-4"><div class="icon-item-icon"><i class="fa fa-battery-4"></i></div><div class="icon-item-name"><span>battery-4</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-empty"><div class="icon-item-icon"><i class="fa fa-battery-empty"></i></div><div class="icon-item-name"><span>battery-empty</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-full"><div class="icon-item-icon"><i class="fa fa-battery-full"></i></div><div class="icon-item-name"><span>battery-full</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-half"><div class="icon-item-icon"><i class="fa fa-battery-half"></i></div><div class="icon-item-name"><span>battery-half</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-quarter"><div class="icon-item-icon"><i class="fa fa-battery-quarter"></i></div><div class="icon-item-name"><span>battery-quarter</span></div></li>
+                <li class="icon-item" data-class="fa fa-battery-three-quarters"><div class="icon-item-icon"><i class="fa fa-battery-three-quarters"></i></div><div class="icon-item-name"><span>battery-three-quarters</span></div></li>
+                <li class="icon-item" data-class="fa fa-bed"><div class="icon-item-icon"><i class="fa fa-bed"></i></div><div class="icon-item-name"><span>bed</span></div></li>
+                <li class="icon-item" data-class="fa fa-beer"><div class="icon-item-icon"><i class="fa fa-beer"></i></div><div class="icon-item-name"><span>beer</span></div></li>
+                <li class="icon-item" data-class="fa fa-bell"><div class="icon-item-icon"><i class="fa fa-bell"></i></div><div class="icon-item-name"><span>bell</span></div></li>
+                <li class="icon-item" data-class="fa fa-bell-o"><div class="icon-item-icon"><i class="fa fa-bell-o"></i></div><div class="icon-item-name"><span>bell-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-bell-slash"><div class="icon-item-icon"><i class="fa fa-bell-slash"></i></div><div class="icon-item-name"><span>bell-slash</span></div></li>
+                <li class="icon-item" data-class="fa fa-bell-slash-o"><div class="icon-item-icon"><i class="fa fa-bell-slash-o"></i></div><div class="icon-item-name"><span>bell-slash-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-bicycle"><div class="icon-item-icon"><i class="fa fa-bicycle"></i></div><div class="icon-item-name"><span>bicycle</span></div></li>
+                <li class="icon-item" data-class="fa fa-binoculars"><div class="icon-item-icon"><i class="fa fa-binoculars"></i></div><div class="icon-item-name"><span>binoculars</span></div></li>
+                <li class="icon-item" data-class="fa fa-birthday-cake"><div class="icon-item-icon"><i class="fa fa-birthday-cake"></i></div><div class="icon-item-name"><span>birthday-cake</span></div></li>
+                <li class="icon-item" data-class="fa fa-blind"><div class="icon-item-icon"><i class="fa fa-blind"></i></div><div class="icon-item-name"><span>blind</span></div></li>
+                <li class="icon-item" data-class="fa fa-bluetooth"><div class="icon-item-icon"><i class="fa fa-bluetooth"></i></div><div class="icon-item-name"><span>bluetooth</span></div></li>
+                <li class="icon-item" data-class="fa fa-bluetooth-b"><div class="icon-item-icon"><i class="fa fa-bluetooth-b"></i></div><div class="icon-item-name"><span>bluetooth-b</span></div></li>
+                <li class="icon-item" data-class="fa fa-bolt"><div class="icon-item-icon"><i class="fa fa-bolt"></i></div><div class="icon-item-name"><span>bolt</span></div></li>
+                <li class="icon-item" data-class="fa fa-bomb"><div class="icon-item-icon"><i class="fa fa-bomb"></i></div><div class="icon-item-name"><span>bomb</span></div></li>
+                <li class="icon-item" data-class="fa fa-book"><div class="icon-item-icon"><i class="fa fa-book"></i></div><div class="icon-item-name"><span>book</span></div></li>
+                <li class="icon-item" data-class="fa fa-bookmark"><div class="icon-item-icon"><i class="fa fa-bookmark"></i></div><div class="icon-item-name"><span>bookmark</span></div></li>
+                <li class="icon-item" data-class="fa fa-bookmark-o"><div class="icon-item-icon"><i class="fa fa-bookmark-o"></i></div><div class="icon-item-name"><span>bookmark-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-braille"><div class="icon-item-icon"><i class="fa fa-braille"></i></div><div class="icon-item-name"><span>braille</span></div></li>
+                <li class="icon-item" data-class="fa fa-briefcase"><div class="icon-item-icon"><i class="fa fa-briefcase"></i></div><div class="icon-item-name"><span>briefcase</span></div></li>
+                <li class="icon-item" data-class="fa fa-bug"><div class="icon-item-icon"><i class="fa fa-bug"></i></div><div class="icon-item-name"><span>bug</span></div></li>
+                <li class="icon-item" data-class="fa fa-building"><div class="icon-item-icon"><i class="fa fa-building"></i></div><div class="icon-item-name"><span>building</span></div></li>
+                <li class="icon-item" data-class="fa fa-building-o"><div class="icon-item-icon"><i class="fa fa-building-o"></i></div><div class="icon-item-name"><span>building-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-bullhorn"><div class="icon-item-icon"><i class="fa fa-bullhorn"></i></div><div class="icon-item-name"><span>bullhorn</span></div></li>
+                <li class="icon-item" data-class="fa fa-bullseye"><div class="icon-item-icon"><i class="fa fa-bullseye"></i></div><div class="icon-item-name"><span>bullseye</span></div></li>
+                <li class="icon-item" data-class="fa fa-bus"><div class="icon-item-icon"><i class="fa fa-bus"></i></div><div class="icon-item-name"><span>bus</span></div></li>
+                <li class="icon-item" data-class="fa fa-cab"><div class="icon-item-icon"><i class="fa fa-cab"></i></div><div class="icon-item-name"><span>cab</span></div></li>
+                <li class="icon-item" data-class="fa fa-calculator"><div class="icon-item-icon"><i class="fa fa-calculator"></i></div><div class="icon-item-name"><span>calculator</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar"><div class="icon-item-icon"><i class="fa fa-calendar"></i></div><div class="icon-item-name"><span>calendar</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar-check-o"><div class="icon-item-icon"><i class="fa fa-calendar-check-o"></i></div><div class="icon-item-name"><span>calendar-check-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar-minus-o"><div class="icon-item-icon"><i class="fa fa-calendar-minus-o"></i></div><div class="icon-item-name"><span>calendar-minus-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar-o"><div class="icon-item-icon"><i class="fa fa-calendar-o"></i></div><div class="icon-item-name"><span>calendar-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar-plus-o"><div class="icon-item-icon"><i class="fa fa-calendar-plus-o"></i></div><div class="icon-item-name"><span>calendar-plus-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-calendar-times-o"><div class="icon-item-icon"><i class="fa fa-calendar-times-o"></i></div><div class="icon-item-name"><span>calendar-times-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-camera"><div class="icon-item-icon"><i class="fa fa-camera"></i></div><div class="icon-item-name"><span>camera</span></div></li>
+                <li class="icon-item" data-class="fa fa-camera-retro"><div class="icon-item-icon"><i class="fa fa-camera-retro"></i></div><div class="icon-item-name"><span>camera-retro</span></div></li>
+                <li class="icon-item" data-class="fa fa-car"><div class="icon-item-icon"><i class="fa fa-car"></i></div><div class="icon-item-name"><span>car</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-down"><div class="icon-item-icon"><i class="fa fa-caret-square-o-down"></i></div><div class="icon-item-name"><span>caret-square-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-left"><div class="icon-item-icon"><i class="fa fa-caret-square-o-left"></i></div><div class="icon-item-name"><span>caret-square-o-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-right"><div class="icon-item-icon"><i class="fa fa-caret-square-o-right"></i></div><div class="icon-item-name"><span>caret-square-o-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-up"><div class="icon-item-icon"><i class="fa fa-caret-square-o-up"></i></div><div class="icon-item-name"><span>caret-square-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-cart-arrow-down"><div class="icon-item-icon"><i class="fa fa-cart-arrow-down"></i></div><div class="icon-item-name"><span>cart-arrow-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-cart-plus"><div class="icon-item-icon"><i class="fa fa-cart-plus"></i></div><div class="icon-item-name"><span>cart-plus</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc"><div class="icon-item-icon"><i class="fa fa-cc"></i></div><div class="icon-item-name"><span>cc</span></div></li>
+                <li class="icon-item" data-class="fa fa-certificate"><div class="icon-item-icon"><i class="fa fa-certificate"></i></div><div class="icon-item-name"><span>certificate</span></div></li>
+                <li class="icon-item" data-class="fa fa-check"><div class="icon-item-icon"><i class="fa fa-check"></i></div><div class="icon-item-name"><span>check</span></div></li>
+                <li class="icon-item" data-class="fa fa-check-circle"><div class="icon-item-icon"><i class="fa fa-check-circle"></i></div><div class="icon-item-name"><span>check-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-check-circle-o"><div class="icon-item-icon"><i class="fa fa-check-circle-o"></i></div><div class="icon-item-name"><span>check-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-check-square"><div class="icon-item-icon"><i class="fa fa-check-square"></i></div><div class="icon-item-name"><span>check-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-check-square-o"><div class="icon-item-icon"><i class="fa fa-check-square-o"></i></div><div class="icon-item-name"><span>check-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-child"><div class="icon-item-icon"><i class="fa fa-child"></i></div><div class="icon-item-name"><span>child</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle"><div class="icon-item-icon"><i class="fa fa-circle"></i></div><div class="icon-item-name"><span>circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle-o"><div class="icon-item-icon"><i class="fa fa-circle-o"></i></div><div class="icon-item-name"><span>circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle-o-notch"><div class="icon-item-icon"><i class="fa fa-circle-o-notch"></i></div><div class="icon-item-name"><span>circle-o-notch</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle-thin"><div class="icon-item-icon"><i class="fa fa-circle-thin"></i></div><div class="icon-item-name"><span>circle-thin</span></div></li>
+                <li class="icon-item" data-class="fa fa-clock-o"><div class="icon-item-icon"><i class="fa fa-clock-o"></i></div><div class="icon-item-name"><span>clock-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-clone"><div class="icon-item-icon"><i class="fa fa-clone"></i></div><div class="icon-item-name"><span>clone</span></div></li>
+                <li class="icon-item" data-class="fa fa-close"><div class="icon-item-icon"><i class="fa fa-close"></i></div><div class="icon-item-name"><span>close</span></div></li>
+                <li class="icon-item" data-class="fa fa-cloud"><div class="icon-item-icon"><i class="fa fa-cloud"></i></div><div class="icon-item-name"><span>cloud</span></div></li>
+                <li class="icon-item" data-class="fa fa-cloud-download"><div class="icon-item-icon"><i class="fa fa-cloud-download"></i></div><div class="icon-item-name"><span>cloud-download</span></div></li>
+                <li class="icon-item" data-class="fa fa-cloud-upload"><div class="icon-item-icon"><i class="fa fa-cloud-upload"></i></div><div class="icon-item-name"><span>cloud-upload</span></div></li>
+                <li class="icon-item" data-class="fa fa-code"><div class="icon-item-icon"><i class="fa fa-code"></i></div><div class="icon-item-name"><span>code</span></div></li>
+                <li class="icon-item" data-class="fa fa-code-fork"><div class="icon-item-icon"><i class="fa fa-code-fork"></i></div><div class="icon-item-name"><span>code-fork</span></div></li>
+                <li class="icon-item" data-class="fa fa-coffee"><div class="icon-item-icon"><i class="fa fa-coffee"></i></div><div class="icon-item-name"><span>coffee</span></div></li>
+                <li class="icon-item" data-class="fa fa-cog"><div class="icon-item-icon"><i class="fa fa-cog"></i></div><div class="icon-item-name"><span>cog</span></div></li>
+                <li class="icon-item" data-class="fa fa-cogs"><div class="icon-item-icon"><i class="fa fa-cogs"></i></div><div class="icon-item-name"><span>cogs</span></div></li>
+                <li class="icon-item" data-class="fa fa-comment"><div class="icon-item-icon"><i class="fa fa-comment"></i></div><div class="icon-item-name"><span>comment</span></div></li>
+                <li class="icon-item" data-class="fa fa-comment-o"><div class="icon-item-icon"><i class="fa fa-comment-o"></i></div><div class="icon-item-name"><span>comment-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-commenting"><div class="icon-item-icon"><i class="fa fa-commenting"></i></div><div class="icon-item-name"><span>commenting</span></div></li>
+                <li class="icon-item" data-class="fa fa-commenting-o"><div class="icon-item-icon"><i class="fa fa-commenting-o"></i></div><div class="icon-item-name"><span>commenting-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-comments"><div class="icon-item-icon"><i class="fa fa-comments"></i></div><div class="icon-item-name"><span>comments</span></div></li>
+                <li class="icon-item" data-class="fa fa-comments-o"><div class="icon-item-icon"><i class="fa fa-comments-o"></i></div><div class="icon-item-name"><span>comments-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-compass"><div class="icon-item-icon"><i class="fa fa-compass"></i></div><div class="icon-item-name"><span>compass</span></div></li>
+                <li class="icon-item" data-class="fa fa-copyright"><div class="icon-item-icon"><i class="fa fa-copyright"></i></div><div class="icon-item-name"><span>copyright</span></div></li>
+                <li class="icon-item" data-class="fa fa-creative-commons"><div class="icon-item-icon"><i class="fa fa-creative-commons"></i></div><div class="icon-item-name"><span>creative-commons</span></div></li>
+                <li class="icon-item" data-class="fa fa-credit-card"><div class="icon-item-icon"><i class="fa fa-credit-card"></i></div><div class="icon-item-name"><span>credit-card</span></div></li>
+                <li class="icon-item" data-class="fa fa-credit-card-alt"><div class="icon-item-icon"><i class="fa fa-credit-card-alt"></i></div><div class="icon-item-name"><span>credit-card-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-crop"><div class="icon-item-icon"><i class="fa fa-crop"></i></div><div class="icon-item-name"><span>crop</span></div></li>
+                <li class="icon-item" data-class="fa fa-crosshairs"><div class="icon-item-icon"><i class="fa fa-crosshairs"></i></div><div class="icon-item-name"><span>crosshairs</span></div></li>
+                <li class="icon-item" data-class="fa fa-cube"><div class="icon-item-icon"><i class="fa fa-cube"></i></div><div class="icon-item-name"><span>cube</span></div></li>
+                <li class="icon-item" data-class="fa fa-cubes"><div class="icon-item-icon"><i class="fa fa-cubes"></i></div><div class="icon-item-name"><span>cubes</span></div></li>
+                <li class="icon-item" data-class="fa fa-cutlery"><div class="icon-item-icon"><i class="fa fa-cutlery"></i></div><div class="icon-item-name"><span>cutlery</span></div></li>
+                <li class="icon-item" data-class="fa fa-dashboard"><div class="icon-item-icon"><i class="fa fa-dashboard"></i></div><div class="icon-item-name"><span>dashboard</span></div></li>
+                <li class="icon-item" data-class="fa fa-database"><div class="icon-item-icon"><i class="fa fa-database"></i></div><div class="icon-item-name"><span>database</span></div></li>
+                <li class="icon-item" data-class="fa fa-deaf"><div class="icon-item-icon"><i class="fa fa-deaf"></i></div><div class="icon-item-name"><span>deaf</span></div></li>
+                <li class="icon-item" data-class="fa fa-deafness"><div class="icon-item-icon"><i class="fa fa-deafness"></i></div><div class="icon-item-name"><span>deafness</span></div></li>
+                <li class="icon-item" data-class="fa fa-desktop"><div class="icon-item-icon"><i class="fa fa-desktop"></i></div><div class="icon-item-name"><span>desktop</span></div></li>
+                <li class="icon-item" data-class="fa fa-diamond"><div class="icon-item-icon"><i class="fa fa-diamond"></i></div><div class="icon-item-name"><span>diamond</span></div></li>
+                <li class="icon-item" data-class="fa fa-dot-circle-o"><div class="icon-item-icon"><i class="fa fa-dot-circle-o"></i></div><div class="icon-item-name"><span>dot-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-download"><div class="icon-item-icon"><i class="fa fa-download"></i></div><div class="icon-item-name"><span>download</span></div></li>
+                <li class="icon-item" data-class="fa fa-drivers-license"><div class="icon-item-icon"><i class="fa fa-drivers-license"></i></div><div class="icon-item-name"><span>drivers-license</span></div></li>
+                <li class="icon-item" data-class="fa fa-drivers-license-o"><div class="icon-item-icon"><i class="fa fa-drivers-license-o"></i></div><div class="icon-item-name"><span>drivers-license-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-edit"><div class="icon-item-icon"><i class="fa fa-edit"></i></div><div class="icon-item-name"><span>edit</span></div></li>
+                <li class="icon-item" data-class="fa fa-ellipsis-h"><div class="icon-item-icon"><i class="fa fa-ellipsis-h"></i></div><div class="icon-item-name"><span>ellipsis-h</span></div></li>
+                <li class="icon-item" data-class="fa fa-ellipsis-v"><div class="icon-item-icon"><i class="fa fa-ellipsis-v"></i></div><div class="icon-item-name"><span>ellipsis-v</span></div></li>
+                <li class="icon-item" data-class="fa fa-envelope"><div class="icon-item-icon"><i class="fa fa-envelope"></i></div><div class="icon-item-name"><span>envelope</span></div></li>
+                <li class="icon-item" data-class="fa fa-envelope-o"><div class="icon-item-icon"><i class="fa fa-envelope-o"></i></div><div class="icon-item-name"><span>envelope-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-envelope-open"><div class="icon-item-icon"><i class="fa fa-envelope-open"></i></div><div class="icon-item-name"><span>envelope-open</span></div></li>
+                <li class="icon-item" data-class="fa fa-envelope-open-o"><div class="icon-item-icon"><i class="fa fa-envelope-open-o"></i></div><div class="icon-item-name"><span>envelope-open-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-envelope-square"><div class="icon-item-icon"><i class="fa fa-envelope-square"></i></div><div class="icon-item-name"><span>envelope-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-eraser"><div class="icon-item-icon"><i class="fa fa-eraser"></i></div><div class="icon-item-name"><span>eraser</span></div></li>
+                <li class="icon-item" data-class="fa fa-exchange"><div class="icon-item-icon"><i class="fa fa-exchange"></i></div><div class="icon-item-name"><span>exchange</span></div></li>
+                <li class="icon-item" data-class="fa fa-exclamation"><div class="icon-item-icon"><i class="fa fa-exclamation"></i></div><div class="icon-item-name"><span>exclamation</span></div></li>
+                <li class="icon-item" data-class="fa fa-exclamation-circle"><div class="icon-item-icon"><i class="fa fa-exclamation-circle"></i></div><div class="icon-item-name"><span>exclamation-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-exclamation-triangle"><div class="icon-item-icon"><i class="fa fa-exclamation-triangle"></i></div><div class="icon-item-name"><span>exclamation-triangle</span></div></li>
+                <li class="icon-item" data-class="fa fa-external-link"><div class="icon-item-icon"><i class="fa fa-external-link"></i></div><div class="icon-item-name"><span>external-link</span></div></li>
+                <li class="icon-item" data-class="fa fa-external-link-square"><div class="icon-item-icon"><i class="fa fa-external-link-square"></i></div><div class="icon-item-name"><span>external-link-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-eye"><div class="icon-item-icon"><i class="fa fa-eye"></i></div><div class="icon-item-name"><span>eye</span></div></li>
+                <li class="icon-item" data-class="fa fa-eye-slash"><div class="icon-item-icon"><i class="fa fa-eye-slash"></i></div><div class="icon-item-name"><span>eye-slash</span></div></li>
+                <li class="icon-item" data-class="fa fa-eyedropper"><div class="icon-item-icon"><i class="fa fa-eyedropper"></i></div><div class="icon-item-name"><span>eyedropper</span></div></li>
+                <li class="icon-item" data-class="fa fa-fax"><div class="icon-item-icon"><i class="fa fa-fax"></i></div><div class="icon-item-name"><span>fax</span></div></li>
+                <li class="icon-item" data-class="fa fa-feed"><div class="icon-item-icon"><i class="fa fa-feed"></i></div><div class="icon-item-name"><span>feed</span></div></li>
+                <li class="icon-item" data-class="fa fa-female"><div class="icon-item-icon"><i class="fa fa-female"></i></div><div class="icon-item-name"><span>female</span></div></li>
+                <li class="icon-item" data-class="fa fa-fighter-jet"><div class="icon-item-icon"><i class="fa fa-fighter-jet"></i></div><div class="icon-item-name"><span>fighter-jet</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-archive-o"><div class="icon-item-icon"><i class="fa fa-file-archive-o"></i></div><div class="icon-item-name"><span>file-archive-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-audio-o"><div class="icon-item-icon"><i class="fa fa-file-audio-o"></i></div><div class="icon-item-name"><span>file-audio-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-code-o"><div class="icon-item-icon"><i class="fa fa-file-code-o"></i></div><div class="icon-item-name"><span>file-code-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-excel-o"><div class="icon-item-icon"><i class="fa fa-file-excel-o"></i></div><div class="icon-item-name"><span>file-excel-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-image-o"><div class="icon-item-icon"><i class="fa fa-file-image-o"></i></div><div class="icon-item-name"><span>file-image-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-movie-o"><div class="icon-item-icon"><i class="fa fa-file-movie-o"></i></div><div class="icon-item-name"><span>file-movie-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-pdf-o"><div class="icon-item-icon"><i class="fa fa-file-pdf-o"></i></div><div class="icon-item-name"><span>file-pdf-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-photo-o"><div class="icon-item-icon"><i class="fa fa-file-photo-o"></i></div><div class="icon-item-name"><span>file-photo-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-picture-o"><div class="icon-item-icon"><i class="fa fa-file-picture-o"></i></div><div class="icon-item-name"><span>file-picture-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-powerpoint-o"><div class="icon-item-icon"><i class="fa fa-file-powerpoint-o"></i></div><div class="icon-item-name"><span>file-powerpoint-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-sound-o"><div class="icon-item-icon"><i class="fa fa-file-sound-o"></i></div><div class="icon-item-name"><span>file-sound-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-video-o"><div class="icon-item-icon"><i class="fa fa-file-video-o"></i></div><div class="icon-item-name"><span>file-video-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-word-o"><div class="icon-item-icon"><i class="fa fa-file-word-o"></i></div><div class="icon-item-name"><span>file-word-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-zip-o"><div class="icon-item-icon"><i class="fa fa-file-zip-o"></i></div><div class="icon-item-name"><span>file-zip-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-film"><div class="icon-item-icon"><i class="fa fa-film"></i></div><div class="icon-item-name"><span>film</span></div></li>
+                <li class="icon-item" data-class="fa fa-filter"><div class="icon-item-icon"><i class="fa fa-filter"></i></div><div class="icon-item-name"><span>filter</span></div></li>
+                <li class="icon-item" data-class="fa fa-fire"><div class="icon-item-icon"><i class="fa fa-fire"></i></div><div class="icon-item-name"><span>fire</span></div></li>
+                <li class="icon-item" data-class="fa fa-fire-extinguisher"><div class="icon-item-icon"><i class="fa fa-fire-extinguisher"></i></div><div class="icon-item-name"><span>fire-extinguisher</span></div></li>
+                <li class="icon-item" data-class="fa fa-flag"><div class="icon-item-icon"><i class="fa fa-flag"></i></div><div class="icon-item-name"><span>flag</span></div></li>
+                <li class="icon-item" data-class="fa fa-flag-checkered"><div class="icon-item-icon"><i class="fa fa-flag-checkered"></i></div><div class="icon-item-name"><span>flag-checkered</span></div></li>
+                <li class="icon-item" data-class="fa fa-flag-o"><div class="icon-item-icon"><i class="fa fa-flag-o"></i></div><div class="icon-item-name"><span>flag-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-flash"><div class="icon-item-icon"><i class="fa fa-flash"></i></div><div class="icon-item-name"><span>flash</span></div></li>
+                <li class="icon-item" data-class="fa fa-flask"><div class="icon-item-icon"><i class="fa fa-flask"></i></div><div class="icon-item-name"><span>flask</span></div></li>
+                <li class="icon-item" data-class="fa fa-folder"><div class="icon-item-icon"><i class="fa fa-folder"></i></div><div class="icon-item-name"><span>folder</span></div></li>
+                <li class="icon-item" data-class="fa fa-folder-o"><div class="icon-item-icon"><i class="fa fa-folder-o"></i></div><div class="icon-item-name"><span>folder-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-folder-open"><div class="icon-item-icon"><i class="fa fa-folder-open"></i></div><div class="icon-item-name"><span>folder-open</span></div></li>
+                <li class="icon-item" data-class="fa fa-folder-open-o"><div class="icon-item-icon"><i class="fa fa-folder-open-o"></i></div><div class="icon-item-name"><span>folder-open-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-frown-o"><div class="icon-item-icon"><i class="fa fa-frown-o"></i></div><div class="icon-item-name"><span>frown-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-futbol-o"><div class="icon-item-icon"><i class="fa fa-futbol-o"></i></div><div class="icon-item-name"><span>futbol-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-gamepad"><div class="icon-item-icon"><i class="fa fa-gamepad"></i></div><div class="icon-item-name"><span>gamepad</span></div></li>
+                <li class="icon-item" data-class="fa fa-gavel"><div class="icon-item-icon"><i class="fa fa-gavel"></i></div><div class="icon-item-name"><span>gavel</span></div></li>
+                <li class="icon-item" data-class="fa fa-gear"><div class="icon-item-icon"><i class="fa fa-gear"></i></div><div class="icon-item-name"><span>gear</span></div></li>
+                <li class="icon-item" data-class="fa fa-gears"><div class="icon-item-icon"><i class="fa fa-gears"></i></div><div class="icon-item-name"><span>gears</span></div></li>
+                <li class="icon-item" data-class="fa fa-gift"><div class="icon-item-icon"><i class="fa fa-gift"></i></div><div class="icon-item-name"><span>gift</span></div></li>
+                <li class="icon-item" data-class="fa fa-glass"><div class="icon-item-icon"><i class="fa fa-glass"></i></div><div class="icon-item-name"><span>glass</span></div></li>
+                <li class="icon-item" data-class="fa fa-globe"><div class="icon-item-icon"><i class="fa fa-globe"></i></div><div class="icon-item-name"><span>globe</span></div></li>
+                <li class="icon-item" data-class="fa fa-graduation-cap"><div class="icon-item-icon"><i class="fa fa-graduation-cap"></i></div><div class="icon-item-name"><span>graduation-cap</span></div></li>
+                <li class="icon-item" data-class="fa fa-group"><div class="icon-item-icon"><i class="fa fa-group"></i></div><div class="icon-item-name"><span>group</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-grab-o"><div class="icon-item-icon"><i class="fa fa-hand-grab-o"></i></div><div class="icon-item-name"><span>hand-grab-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-lizard-o"><div class="icon-item-icon"><i class="fa fa-hand-lizard-o"></i></div><div class="icon-item-name"><span>hand-lizard-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-paper-o"><div class="icon-item-icon"><i class="fa fa-hand-paper-o"></i></div><div class="icon-item-name"><span>hand-paper-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-peace-o"><div class="icon-item-icon"><i class="fa fa-hand-peace-o"></i></div><div class="icon-item-name"><span>hand-peace-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-pointer-o"><div class="icon-item-icon"><i class="fa fa-hand-pointer-o"></i></div><div class="icon-item-name"><span>hand-pointer-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-rock-o"><div class="icon-item-icon"><i class="fa fa-hand-rock-o"></i></div><div class="icon-item-name"><span>hand-rock-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-scissors-o"><div class="icon-item-icon"><i class="fa fa-hand-scissors-o"></i></div><div class="icon-item-name"><span>hand-scissors-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-spock-o"><div class="icon-item-icon"><i class="fa fa-hand-spock-o"></i></div><div class="icon-item-name"><span>hand-spock-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-stop-o"><div class="icon-item-icon"><i class="fa fa-hand-stop-o"></i></div><div class="icon-item-name"><span>hand-stop-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-handshake-o"><div class="icon-item-icon"><i class="fa fa-handshake-o"></i></div><div class="icon-item-name"><span>handshake-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hard-of-hearing"><div class="icon-item-icon"><i class="fa fa-hard-of-hearing"></i></div><div class="icon-item-name"><span>hard-of-hearing</span></div></li>
+                <li class="icon-item" data-class="fa fa-hashtag"><div class="icon-item-icon"><i class="fa fa-hashtag"></i></div><div class="icon-item-name"><span>hashtag</span></div></li>
+                <li class="icon-item" data-class="fa fa-hdd-o"><div class="icon-item-icon"><i class="fa fa-hdd-o"></i></div><div class="icon-item-name"><span>hdd-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-headphones"><div class="icon-item-icon"><i class="fa fa-headphones"></i></div><div class="icon-item-name"><span>headphones</span></div></li>
+                <li class="icon-item" data-class="fa fa-heart"><div class="icon-item-icon"><i class="fa fa-heart"></i></div><div class="icon-item-name"><span>heart</span></div></li>
+                <li class="icon-item" data-class="fa fa-heart-o"><div class="icon-item-icon"><i class="fa fa-heart-o"></i></div><div class="icon-item-name"><span>heart-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-heartbeat"><div class="icon-item-icon"><i class="fa fa-heartbeat"></i></div><div class="icon-item-name"><span>heartbeat</span></div></li>
+                <li class="icon-item" data-class="fa fa-history"><div class="icon-item-icon"><i class="fa fa-history"></i></div><div class="icon-item-name"><span>history</span></div></li>
+                <li class="icon-item" data-class="fa fa-home"><div class="icon-item-icon"><i class="fa fa-home"></i></div><div class="icon-item-name"><span>home</span></div></li>
+                <li class="icon-item" data-class="fa fa-hotel"><div class="icon-item-icon"><i class="fa fa-hotel"></i></div><div class="icon-item-name"><span>hotel</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass"><div class="icon-item-icon"><i class="fa fa-hourglass"></i></div><div class="icon-item-name"><span>hourglass</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-1"><div class="icon-item-icon"><i class="fa fa-hourglass-1"></i></div><div class="icon-item-name"><span>hourglass-1</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-2"><div class="icon-item-icon"><i class="fa fa-hourglass-2"></i></div><div class="icon-item-name"><span>hourglass-2</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-3"><div class="icon-item-icon"><i class="fa fa-hourglass-3"></i></div><div class="icon-item-name"><span>hourglass-3</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-end"><div class="icon-item-icon"><i class="fa fa-hourglass-end"></i></div><div class="icon-item-name"><span>hourglass-end</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-half"><div class="icon-item-icon"><i class="fa fa-hourglass-half"></i></div><div class="icon-item-name"><span>hourglass-half</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-o"><div class="icon-item-icon"><i class="fa fa-hourglass-o"></i></div><div class="icon-item-name"><span>hourglass-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hourglass-start"><div class="icon-item-icon"><i class="fa fa-hourglass-start"></i></div><div class="icon-item-name"><span>hourglass-start</span></div></li>
+                <li class="icon-item" data-class="fa fa-i-cursor"><div class="icon-item-icon"><i class="fa fa-i-cursor"></i></div><div class="icon-item-name"><span>i-cursor</span></div></li>
+                <li class="icon-item" data-class="fa fa-id-badge"><div class="icon-item-icon"><i class="fa fa-id-badge"></i></div><div class="icon-item-name"><span>id-badge</span></div></li>
+                <li class="icon-item" data-class="fa fa-id-card"><div class="icon-item-icon"><i class="fa fa-id-card"></i></div><div class="icon-item-name"><span>id-card</span></div></li>
+                <li class="icon-item" data-class="fa fa-id-card-o"><div class="icon-item-icon"><i class="fa fa-id-card-o"></i></div><div class="icon-item-name"><span>id-card-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-image"><div class="icon-item-icon"><i class="fa fa-image"></i></div><div class="icon-item-name"><span>image</span></div></li>
+                <li class="icon-item" data-class="fa fa-inbox"><div class="icon-item-icon"><i class="fa fa-inbox"></i></div><div class="icon-item-name"><span>inbox</span></div></li>
+                <li class="icon-item" data-class="fa fa-industry"><div class="icon-item-icon"><i class="fa fa-industry"></i></div><div class="icon-item-name"><span>industry</span></div></li>
+                <li class="icon-item" data-class="fa fa-info"><div class="icon-item-icon"><i class="fa fa-info"></i></div><div class="icon-item-name"><span>info</span></div></li>
+                <li class="icon-item" data-class="fa fa-info-circle"><div class="icon-item-icon"><i class="fa fa-info-circle"></i></div><div class="icon-item-name"><span>info-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-institution"><div class="icon-item-icon"><i class="fa fa-institution"></i></div><div class="icon-item-name"><span>institution</span></div></li>
+                <li class="icon-item" data-class="fa fa-key"><div class="icon-item-icon"><i class="fa fa-key"></i></div><div class="icon-item-name"><span>key</span></div></li>
+                <li class="icon-item" data-class="fa fa-keyboard-o"><div class="icon-item-icon"><i class="fa fa-keyboard-o"></i></div><div class="icon-item-name"><span>keyboard-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-language"><div class="icon-item-icon"><i class="fa fa-language"></i></div><div class="icon-item-name"><span>language</span></div></li>
+                <li class="icon-item" data-class="fa fa-laptop"><div class="icon-item-icon"><i class="fa fa-laptop"></i></div><div class="icon-item-name"><span>laptop</span></div></li>
+                <li class="icon-item" data-class="fa fa-leaf"><div class="icon-item-icon"><i class="fa fa-leaf"></i></div><div class="icon-item-name"><span>leaf</span></div></li>
+                <li class="icon-item" data-class="fa fa-legal"><div class="icon-item-icon"><i class="fa fa-legal"></i></div><div class="icon-item-name"><span>legal</span></div></li>
+                <li class="icon-item" data-class="fa fa-lemon-o"><div class="icon-item-icon"><i class="fa fa-lemon-o"></i></div><div class="icon-item-name"><span>lemon-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-level-down"><div class="icon-item-icon"><i class="fa fa-level-down"></i></div><div class="icon-item-name"><span>level-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-level-up"><div class="icon-item-icon"><i class="fa fa-level-up"></i></div><div class="icon-item-name"><span>level-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-life-bouy"><div class="icon-item-icon"><i class="fa fa-life-bouy"></i></div><div class="icon-item-name"><span>life-bouy</span></div></li>
+                <li class="icon-item" data-class="fa fa-life-buoy"><div class="icon-item-icon"><i class="fa fa-life-buoy"></i></div><div class="icon-item-name"><span>life-buoy</span></div></li>
+                <li class="icon-item" data-class="fa fa-life-ring"><div class="icon-item-icon"><i class="fa fa-life-ring"></i></div><div class="icon-item-name"><span>life-ring</span></div></li>
+                <li class="icon-item" data-class="fa fa-life-saver"><div class="icon-item-icon"><i class="fa fa-life-saver"></i></div><div class="icon-item-name"><span>life-saver</span></div></li>
+                <li class="icon-item" data-class="fa fa-lightbulb-o"><div class="icon-item-icon"><i class="fa fa-lightbulb-o"></i></div><div class="icon-item-name"><span>lightbulb-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-line-chart"><div class="icon-item-icon"><i class="fa fa-line-chart"></i></div><div class="icon-item-name"><span>line-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-location-arrow"><div class="icon-item-icon"><i class="fa fa-location-arrow"></i></div><div class="icon-item-name"><span>location-arrow</span></div></li>
+                <li class="icon-item" data-class="fa fa-lock"><div class="icon-item-icon"><i class="fa fa-lock"></i></div><div class="icon-item-name"><span>lock</span></div></li>
+                <li class="icon-item" data-class="fa fa-low-vision"><div class="icon-item-icon"><i class="fa fa-low-vision"></i></div><div class="icon-item-name"><span>low-vision</span></div></li>
+                <li class="icon-item" data-class="fa fa-magic"><div class="icon-item-icon"><i class="fa fa-magic"></i></div><div class="icon-item-name"><span>magic</span></div></li>
+                <li class="icon-item" data-class="fa fa-magnet"><div class="icon-item-icon"><i class="fa fa-magnet"></i></div><div class="icon-item-name"><span>magnet</span></div></li>
+                <li class="icon-item" data-class="fa fa-mail-forward"><div class="icon-item-icon"><i class="fa fa-mail-forward"></i></div><div class="icon-item-name"><span>mail-forward</span></div></li>
+                <li class="icon-item" data-class="fa fa-mail-reply"><div class="icon-item-icon"><i class="fa fa-mail-reply"></i></div><div class="icon-item-name"><span>mail-reply</span></div></li>
+                <li class="icon-item" data-class="fa fa-mail-reply-all"><div class="icon-item-icon"><i class="fa fa-mail-reply-all"></i></div><div class="icon-item-name"><span>mail-reply-all</span></div></li>
+                <li class="icon-item" data-class="fa fa-male"><div class="icon-item-icon"><i class="fa fa-male"></i></div><div class="icon-item-name"><span>male</span></div></li>
+                <li class="icon-item" data-class="fa fa-map"><div class="icon-item-icon"><i class="fa fa-map"></i></div><div class="icon-item-name"><span>map</span></div></li>
+                <li class="icon-item" data-class="fa fa-map-marker"><div class="icon-item-icon"><i class="fa fa-map-marker"></i></div><div class="icon-item-name"><span>map-marker</span></div></li>
+                <li class="icon-item" data-class="fa fa-map-o"><div class="icon-item-icon"><i class="fa fa-map-o"></i></div><div class="icon-item-name"><span>map-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-map-pin"><div class="icon-item-icon"><i class="fa fa-map-pin"></i></div><div class="icon-item-name"><span>map-pin</span></div></li>
+                <li class="icon-item" data-class="fa fa-map-signs"><div class="icon-item-icon"><i class="fa fa-map-signs"></i></div><div class="icon-item-name"><span>map-signs</span></div></li>
+                <li class="icon-item" data-class="fa fa-meh-o"><div class="icon-item-icon"><i class="fa fa-meh-o"></i></div><div class="icon-item-name"><span>meh-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-microchip"><div class="icon-item-icon"><i class="fa fa-microchip"></i></div><div class="icon-item-name"><span>microchip</span></div></li>
+                <li class="icon-item" data-class="fa fa-microphone"><div class="icon-item-icon"><i class="fa fa-microphone"></i></div><div class="icon-item-name"><span>microphone</span></div></li>
+                <li class="icon-item" data-class="fa fa-microphone-slash"><div class="icon-item-icon"><i class="fa fa-microphone-slash"></i></div><div class="icon-item-name"><span>microphone-slash</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus"><div class="icon-item-icon"><i class="fa fa-minus"></i></div><div class="icon-item-name"><span>minus</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus-circle"><div class="icon-item-icon"><i class="fa fa-minus-circle"></i></div><div class="icon-item-name"><span>minus-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus-square"><div class="icon-item-icon"><i class="fa fa-minus-square"></i></div><div class="icon-item-name"><span>minus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus-square-o"><div class="icon-item-icon"><i class="fa fa-minus-square-o"></i></div><div class="icon-item-name"><span>minus-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-mobile"><div class="icon-item-icon"><i class="fa fa-mobile"></i></div><div class="icon-item-name"><span>mobile</span></div></li>
+                <li class="icon-item" data-class="fa fa-mobile-phone"><div class="icon-item-icon"><i class="fa fa-mobile-phone"></i></div><div class="icon-item-name"><span>mobile-phone</span></div></li>
+                <li class="icon-item" data-class="fa fa-money"><div class="icon-item-icon"><i class="fa fa-money"></i></div><div class="icon-item-name"><span>money</span></div></li>
+                <li class="icon-item" data-class="fa fa-moon-o"><div class="icon-item-icon"><i class="fa fa-moon-o"></i></div><div class="icon-item-name"><span>moon-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-mortar-board"><div class="icon-item-icon"><i class="fa fa-mortar-board"></i></div><div class="icon-item-name"><span>mortar-board</span></div></li>
+                <li class="icon-item" data-class="fa fa-motorcycle"><div class="icon-item-icon"><i class="fa fa-motorcycle"></i></div><div class="icon-item-name"><span>motorcycle</span></div></li>
+                <li class="icon-item" data-class="fa fa-mouse-pointer"><div class="icon-item-icon"><i class="fa fa-mouse-pointer"></i></div><div class="icon-item-name"><span>mouse-pointer</span></div></li>
+                <li class="icon-item" data-class="fa fa-music"><div class="icon-item-icon"><i class="fa fa-music"></i></div><div class="icon-item-name"><span>music</span></div></li>
+                <li class="icon-item" data-class="fa fa-navicon"><div class="icon-item-icon"><i class="fa fa-navicon"></i></div><div class="icon-item-name"><span>navicon</span></div></li>
+                <li class="icon-item" data-class="fa fa-newspaper-o"><div class="icon-item-icon"><i class="fa fa-newspaper-o"></i></div><div class="icon-item-name"><span>newspaper-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-object-group"><div class="icon-item-icon"><i class="fa fa-object-group"></i></div><div class="icon-item-name"><span>object-group</span></div></li>
+                <li class="icon-item" data-class="fa fa-object-ungroup"><div class="icon-item-icon"><i class="fa fa-object-ungroup"></i></div><div class="icon-item-name"><span>object-ungroup</span></div></li>
+                <li class="icon-item" data-class="fa fa-paint-brush"><div class="icon-item-icon"><i class="fa fa-paint-brush"></i></div><div class="icon-item-name"><span>paint-brush</span></div></li>
+                <li class="icon-item" data-class="fa fa-paper-plane"><div class="icon-item-icon"><i class="fa fa-paper-plane"></i></div><div class="icon-item-name"><span>paper-plane</span></div></li>
+                <li class="icon-item" data-class="fa fa-paper-plane-o"><div class="icon-item-icon"><i class="fa fa-paper-plane-o"></i></div><div class="icon-item-name"><span>paper-plane-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-paw"><div class="icon-item-icon"><i class="fa fa-paw"></i></div><div class="icon-item-name"><span>paw</span></div></li>
+                <li class="icon-item" data-class="fa fa-pencil"><div class="icon-item-icon"><i class="fa fa-pencil"></i></div><div class="icon-item-name"><span>pencil</span></div></li>
+                <li class="icon-item" data-class="fa fa-pencil-square"><div class="icon-item-icon"><i class="fa fa-pencil-square"></i></div><div class="icon-item-name"><span>pencil-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-pencil-square-o"><div class="icon-item-icon"><i class="fa fa-pencil-square-o"></i></div><div class="icon-item-name"><span>pencil-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-percent"><div class="icon-item-icon"><i class="fa fa-percent"></i></div><div class="icon-item-name"><span>percent</span></div></li>
+                <li class="icon-item" data-class="fa fa-phone"><div class="icon-item-icon"><i class="fa fa-phone"></i></div><div class="icon-item-name"><span>phone</span></div></li>
+                <li class="icon-item" data-class="fa fa-phone-square"><div class="icon-item-icon"><i class="fa fa-phone-square"></i></div><div class="icon-item-name"><span>phone-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-photo"><div class="icon-item-icon"><i class="fa fa-photo"></i></div><div class="icon-item-name"><span>photo</span></div></li>
+                <li class="icon-item" data-class="fa fa-picture-o"><div class="icon-item-icon"><i class="fa fa-picture-o"></i></div><div class="icon-item-name"><span>picture-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-pie-chart"><div class="icon-item-icon"><i class="fa fa-pie-chart"></i></div><div class="icon-item-name"><span>pie-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-plane"><div class="icon-item-icon"><i class="fa fa-plane"></i></div><div class="icon-item-name"><span>plane</span></div></li>
+                <li class="icon-item" data-class="fa fa-plug"><div class="icon-item-icon"><i class="fa fa-plug"></i></div><div class="icon-item-name"><span>plug</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus"><div class="icon-item-icon"><i class="fa fa-plus"></i></div><div class="icon-item-name"><span>plus</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-circle"><div class="icon-item-icon"><i class="fa fa-plus-circle"></i></div><div class="icon-item-name"><span>plus-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-square"><div class="icon-item-icon"><i class="fa fa-plus-square"></i></div><div class="icon-item-name"><span>plus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-square-o"><div class="icon-item-icon"><i class="fa fa-plus-square-o"></i></div><div class="icon-item-name"><span>plus-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-podcast"><div class="icon-item-icon"><i class="fa fa-podcast"></i></div><div class="icon-item-name"><span>podcast</span></div></li>
+                <li class="icon-item" data-class="fa fa-power-off"><div class="icon-item-icon"><i class="fa fa-power-off"></i></div><div class="icon-item-name"><span>power-off</span></div></li>
+                <li class="icon-item" data-class="fa fa-print"><div class="icon-item-icon"><i class="fa fa-print"></i></div><div class="icon-item-name"><span>print</span></div></li>
+                <li class="icon-item" data-class="fa fa-puzzle-piece"><div class="icon-item-icon"><i class="fa fa-puzzle-piece"></i></div><div class="icon-item-name"><span>puzzle-piece</span></div></li>
+                <li class="icon-item" data-class="fa fa-qrcode"><div class="icon-item-icon"><i class="fa fa-qrcode"></i></div><div class="icon-item-name"><span>qrcode</span></div></li>
+                <li class="icon-item" data-class="fa fa-question"><div class="icon-item-icon"><i class="fa fa-question"></i></div><div class="icon-item-name"><span>question</span></div></li>
+                <li class="icon-item" data-class="fa fa-question-circle"><div class="icon-item-icon"><i class="fa fa-question-circle"></i></div><div class="icon-item-name"><span>question-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-question-circle-o"><div class="icon-item-icon"><i class="fa fa-question-circle-o"></i></div><div class="icon-item-name"><span>question-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-quote-left"><div class="icon-item-icon"><i class="fa fa-quote-left"></i></div><div class="icon-item-name"><span>quote-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-quote-right"><div class="icon-item-icon"><i class="fa fa-quote-right"></i></div><div class="icon-item-name"><span>quote-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-random"><div class="icon-item-icon"><i class="fa fa-random"></i></div><div class="icon-item-name"><span>random</span></div></li>
+                <li class="icon-item" data-class="fa fa-recycle"><div class="icon-item-icon"><i class="fa fa-recycle"></i></div><div class="icon-item-name"><span>recycle</span></div></li>
+                <li class="icon-item" data-class="fa fa-refresh"><div class="icon-item-icon"><i class="fa fa-refresh"></i></div><div class="icon-item-name"><span>refresh</span></div></li>
+                <li class="icon-item" data-class="fa fa-registered"><div class="icon-item-icon"><i class="fa fa-registered"></i></div><div class="icon-item-name"><span>registered</span></div></li>
+                <li class="icon-item" data-class="fa fa-remove"><div class="icon-item-icon"><i class="fa fa-remove"></i></div><div class="icon-item-name"><span>remove</span></div></li>
+                <li class="icon-item" data-class="fa fa-reorder"><div class="icon-item-icon"><i class="fa fa-reorder"></i></div><div class="icon-item-name"><span>reorder</span></div></li>
+                <li class="icon-item" data-class="fa fa-reply"><div class="icon-item-icon"><i class="fa fa-reply"></i></div><div class="icon-item-name"><span>reply</span></div></li>
+                <li class="icon-item" data-class="fa fa-reply-all"><div class="icon-item-icon"><i class="fa fa-reply-all"></i></div><div class="icon-item-name"><span>reply-all</span></div></li>
+                <li class="icon-item" data-class="fa fa-retweet"><div class="icon-item-icon"><i class="fa fa-retweet"></i></div><div class="icon-item-name"><span>retweet</span></div></li>
+                <li class="icon-item" data-class="fa fa-road"><div class="icon-item-icon"><i class="fa fa-road"></i></div><div class="icon-item-name"><span>road</span></div></li>
+                <li class="icon-item" data-class="fa fa-rocket"><div class="icon-item-icon"><i class="fa fa-rocket"></i></div><div class="icon-item-name"><span>rocket</span></div></li>
+                <li class="icon-item" data-class="fa fa-rss"><div class="icon-item-icon"><i class="fa fa-rss"></i></div><div class="icon-item-name"><span>rss</span></div></li>
+                <li class="icon-item" data-class="fa fa-rss-square"><div class="icon-item-icon"><i class="fa fa-rss-square"></i></div><div class="icon-item-name"><span>rss-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-s15"><div class="icon-item-icon"><i class="fa fa-s15"></i></div><div class="icon-item-name"><span>s15</span></div></li>
+                <li class="icon-item" data-class="fa fa-search"><div class="icon-item-icon"><i class="fa fa-search"></i></div><div class="icon-item-name"><span>search</span></div></li>
+                <li class="icon-item" data-class="fa fa-search-minus"><div class="icon-item-icon"><i class="fa fa-search-minus"></i></div><div class="icon-item-name"><span>search-minus</span></div></li>
+                <li class="icon-item" data-class="fa fa-search-plus"><div class="icon-item-icon"><i class="fa fa-search-plus"></i></div><div class="icon-item-name"><span>search-plus</span></div></li>
+                <li class="icon-item" data-class="fa fa-send"><div class="icon-item-icon"><i class="fa fa-send"></i></div><div class="icon-item-name"><span>send</span></div></li>
+                <li class="icon-item" data-class="fa fa-send-o"><div class="icon-item-icon"><i class="fa fa-send-o"></i></div><div class="icon-item-name"><span>send-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-server"><div class="icon-item-icon"><i class="fa fa-server"></i></div><div class="icon-item-name"><span>server</span></div></li>
+                <li class="icon-item" data-class="fa fa-share"><div class="icon-item-icon"><i class="fa fa-share"></i></div><div class="icon-item-name"><span>share</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-alt"><div class="icon-item-icon"><i class="fa fa-share-alt"></i></div><div class="icon-item-name"><span>share-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-alt-square"><div class="icon-item-icon"><i class="fa fa-share-alt-square"></i></div><div class="icon-item-name"><span>share-alt-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-square"><div class="icon-item-icon"><i class="fa fa-share-square"></i></div><div class="icon-item-name"><span>share-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-square-o"><div class="icon-item-icon"><i class="fa fa-share-square-o"></i></div><div class="icon-item-name"><span>share-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-shield"><div class="icon-item-icon"><i class="fa fa-shield"></i></div><div class="icon-item-name"><span>shield</span></div></li>
+                <li class="icon-item" data-class="fa fa-ship"><div class="icon-item-icon"><i class="fa fa-ship"></i></div><div class="icon-item-name"><span>ship</span></div></li>
+                <li class="icon-item" data-class="fa fa-shopping-bag"><div class="icon-item-icon"><i class="fa fa-shopping-bag"></i></div><div class="icon-item-name"><span>shopping-bag</span></div></li>
+                <li class="icon-item" data-class="fa fa-shopping-basket"><div class="icon-item-icon"><i class="fa fa-shopping-basket"></i></div><div class="icon-item-name"><span>shopping-basket</span></div></li>
+                <li class="icon-item" data-class="fa fa-shopping-cart"><div class="icon-item-icon"><i class="fa fa-shopping-cart"></i></div><div class="icon-item-name"><span>shopping-cart</span></div></li>
+                <li class="icon-item" data-class="fa fa-shower"><div class="icon-item-icon"><i class="fa fa-shower"></i></div><div class="icon-item-name"><span>shower</span></div></li>
+                <li class="icon-item" data-class="fa fa-sign-in"><div class="icon-item-icon"><i class="fa fa-sign-in"></i></div><div class="icon-item-name"><span>sign-in</span></div></li>
+                <li class="icon-item" data-class="fa fa-sign-language"><div class="icon-item-icon"><i class="fa fa-sign-language"></i></div><div class="icon-item-name"><span>sign-language</span></div></li>
+                <li class="icon-item" data-class="fa fa-sign-out"><div class="icon-item-icon"><i class="fa fa-sign-out"></i></div><div class="icon-item-name"><span>sign-out</span></div></li>
+                <li class="icon-item" data-class="fa fa-signal"><div class="icon-item-icon"><i class="fa fa-signal"></i></div><div class="icon-item-name"><span>signal</span></div></li>
+                <li class="icon-item" data-class="fa fa-signing"><div class="icon-item-icon"><i class="fa fa-signing"></i></div><div class="icon-item-name"><span>signing</span></div></li>
+                <li class="icon-item" data-class="fa fa-sitemap"><div class="icon-item-icon"><i class="fa fa-sitemap"></i></div><div class="icon-item-name"><span>sitemap</span></div></li>
+                <li class="icon-item" data-class="fa fa-sliders"><div class="icon-item-icon"><i class="fa fa-sliders"></i></div><div class="icon-item-name"><span>sliders</span></div></li>
+                <li class="icon-item" data-class="fa fa-smile-o"><div class="icon-item-icon"><i class="fa fa-smile-o"></i></div><div class="icon-item-name"><span>smile-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-snowflake-o"><div class="icon-item-icon"><i class="fa fa-snowflake-o"></i></div><div class="icon-item-name"><span>snowflake-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-soccer-ball-o"><div class="icon-item-icon"><i class="fa fa-soccer-ball-o"></i></div><div class="icon-item-name"><span>soccer-ball-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort"><div class="icon-item-icon"><i class="fa fa-sort"></i></div><div class="icon-item-name"><span>sort</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-alpha-asc"><div class="icon-item-icon"><i class="fa fa-sort-alpha-asc"></i></div><div class="icon-item-name"><span>sort-alpha-asc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-alpha-desc"><div class="icon-item-icon"><i class="fa fa-sort-alpha-desc"></i></div><div class="icon-item-name"><span>sort-alpha-desc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-amount-asc"><div class="icon-item-icon"><i class="fa fa-sort-amount-asc"></i></div><div class="icon-item-name"><span>sort-amount-asc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-amount-desc"><div class="icon-item-icon"><i class="fa fa-sort-amount-desc"></i></div><div class="icon-item-name"><span>sort-amount-desc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-asc"><div class="icon-item-icon"><i class="fa fa-sort-asc"></i></div><div class="icon-item-name"><span>sort-asc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-desc"><div class="icon-item-icon"><i class="fa fa-sort-desc"></i></div><div class="icon-item-name"><span>sort-desc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-down"><div class="icon-item-icon"><i class="fa fa-sort-down"></i></div><div class="icon-item-name"><span>sort-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-numeric-asc"><div class="icon-item-icon"><i class="fa fa-sort-numeric-asc"></i></div><div class="icon-item-name"><span>sort-numeric-asc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-numeric-desc"><div class="icon-item-icon"><i class="fa fa-sort-numeric-desc"></i></div><div class="icon-item-name"><span>sort-numeric-desc</span></div></li>
+                <li class="icon-item" data-class="fa fa-sort-up"><div class="icon-item-icon"><i class="fa fa-sort-up"></i></div><div class="icon-item-name"><span>sort-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-space-shuttle"><div class="icon-item-icon"><i class="fa fa-space-shuttle"></i></div><div class="icon-item-name"><span>space-shuttle</span></div></li>
+                <li class="icon-item" data-class="fa fa-spinner"><div class="icon-item-icon"><i class="fa fa-spinner"></i></div><div class="icon-item-name"><span>spinner</span></div></li>
+                <li class="icon-item" data-class="fa fa-spoon"><div class="icon-item-icon"><i class="fa fa-spoon"></i></div><div class="icon-item-name"><span>spoon</span></div></li>
+                <li class="icon-item" data-class="fa fa-square"><div class="icon-item-icon"><i class="fa fa-square"></i></div><div class="icon-item-name"><span>square</span></div></li>
+                <li class="icon-item" data-class="fa fa-square-o"><div class="icon-item-icon"><i class="fa fa-square-o"></i></div><div class="icon-item-name"><span>square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-star"><div class="icon-item-icon"><i class="fa fa-star"></i></div><div class="icon-item-name"><span>star</span></div></li>
+                <li class="icon-item" data-class="fa fa-star-half"><div class="icon-item-icon"><i class="fa fa-star-half"></i></div><div class="icon-item-name"><span>star-half</span></div></li>
+                <li class="icon-item" data-class="fa fa-star-half-empty"><div class="icon-item-icon"><i class="fa fa-star-half-empty"></i></div><div class="icon-item-name"><span>star-half-empty</span></div></li>
+                <li class="icon-item" data-class="fa fa-star-half-full"><div class="icon-item-icon"><i class="fa fa-star-half-full"></i></div><div class="icon-item-name"><span>star-half-full</span></div></li>
+                <li class="icon-item" data-class="fa fa-star-half-o"><div class="icon-item-icon"><i class="fa fa-star-half-o"></i></div><div class="icon-item-name"><span>star-half-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-star-o"><div class="icon-item-icon"><i class="fa fa-star-o"></i></div><div class="icon-item-name"><span>star-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-sticky-note"><div class="icon-item-icon"><i class="fa fa-sticky-note"></i></div><div class="icon-item-name"><span>sticky-note</span></div></li>
+                <li class="icon-item" data-class="fa fa-sticky-note-o"><div class="icon-item-icon"><i class="fa fa-sticky-note-o"></i></div><div class="icon-item-name"><span>sticky-note-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-street-view"><div class="icon-item-icon"><i class="fa fa-street-view"></i></div><div class="icon-item-name"><span>street-view</span></div></li>
+                <li class="icon-item" data-class="fa fa-suitcase"><div class="icon-item-icon"><i class="fa fa-suitcase"></i></div><div class="icon-item-name"><span>suitcase</span></div></li>
+                <li class="icon-item" data-class="fa fa-sun-o"><div class="icon-item-icon"><i class="fa fa-sun-o"></i></div><div class="icon-item-name"><span>sun-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-support"><div class="icon-item-icon"><i class="fa fa-support"></i></div><div class="icon-item-name"><span>support</span></div></li>
+                <li class="icon-item" data-class="fa fa-tablet"><div class="icon-item-icon"><i class="fa fa-tablet"></i></div><div class="icon-item-name"><span>tablet</span></div></li>
+                <li class="icon-item" data-class="fa fa-tachometer"><div class="icon-item-icon"><i class="fa fa-tachometer"></i></div><div class="icon-item-name"><span>tachometer</span></div></li>
+                <li class="icon-item" data-class="fa fa-tag"><div class="icon-item-icon"><i class="fa fa-tag"></i></div><div class="icon-item-name"><span>tag</span></div></li>
+                <li class="icon-item" data-class="fa fa-tags"><div class="icon-item-icon"><i class="fa fa-tags"></i></div><div class="icon-item-name"><span>tags</span></div></li>
+                <li class="icon-item" data-class="fa fa-tasks"><div class="icon-item-icon"><i class="fa fa-tasks"></i></div><div class="icon-item-name"><span>tasks</span></div></li>
+                <li class="icon-item" data-class="fa fa-taxi"><div class="icon-item-icon"><i class="fa fa-taxi"></i></div><div class="icon-item-name"><span>taxi</span></div></li>
+                <li class="icon-item" data-class="fa fa-television"><div class="icon-item-icon"><i class="fa fa-television"></i></div><div class="icon-item-name"><span>television</span></div></li>
+                <li class="icon-item" data-class="fa fa-terminal"><div class="icon-item-icon"><i class="fa fa-terminal"></i></div><div class="icon-item-name"><span>terminal</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer"><div class="icon-item-icon"><i class="fa fa-thermometer"></i></div><div class="icon-item-name"><span>thermometer</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-0"><div class="icon-item-icon"><i class="fa fa-thermometer-0"></i></div><div class="icon-item-name"><span>thermometer-0</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-1"><div class="icon-item-icon"><i class="fa fa-thermometer-1"></i></div><div class="icon-item-name"><span>thermometer-1</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-2"><div class="icon-item-icon"><i class="fa fa-thermometer-2"></i></div><div class="icon-item-name"><span>thermometer-2</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-3"><div class="icon-item-icon"><i class="fa fa-thermometer-3"></i></div><div class="icon-item-name"><span>thermometer-3</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-4"><div class="icon-item-icon"><i class="fa fa-thermometer-4"></i></div><div class="icon-item-name"><span>thermometer-4</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-empty"><div class="icon-item-icon"><i class="fa fa-thermometer-empty"></i></div><div class="icon-item-name"><span>thermometer-empty</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-full"><div class="icon-item-icon"><i class="fa fa-thermometer-full"></i></div><div class="icon-item-name"><span>thermometer-full</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-half"><div class="icon-item-icon"><i class="fa fa-thermometer-half"></i></div><div class="icon-item-name"><span>thermometer-half</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-quarter"><div class="icon-item-icon"><i class="fa fa-thermometer-quarter"></i></div><div class="icon-item-name"><span>thermometer-quarter</span></div></li>
+                <li class="icon-item" data-class="fa fa-thermometer-three-quarters"><div class="icon-item-icon"><i class="fa fa-thermometer-three-quarters"></i></div><div class="icon-item-name"><span>thermometer-three-quarters</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumb-tack"><div class="icon-item-icon"><i class="fa fa-thumb-tack"></i></div><div class="icon-item-name"><span>thumb-tack</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-down"><div class="icon-item-icon"><i class="fa fa-thumbs-down"></i></div><div class="icon-item-name"><span>thumbs-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-o-down"><div class="icon-item-icon"><i class="fa fa-thumbs-o-down"></i></div><div class="icon-item-name"><span>thumbs-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-o-up"><div class="icon-item-icon"><i class="fa fa-thumbs-o-up"></i></div><div class="icon-item-name"><span>thumbs-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-up"><div class="icon-item-icon"><i class="fa fa-thumbs-up"></i></div><div class="icon-item-name"><span>thumbs-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-ticket"><div class="icon-item-icon"><i class="fa fa-ticket"></i></div><div class="icon-item-name"><span>ticket</span></div></li>
+                <li class="icon-item" data-class="fa fa-times"><div class="icon-item-icon"><i class="fa fa-times"></i></div><div class="icon-item-name"><span>times</span></div></li>
+                <li class="icon-item" data-class="fa fa-times-circle"><div class="icon-item-icon"><i class="fa fa-times-circle"></i></div><div class="icon-item-name"><span>times-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-times-circle-o"><div class="icon-item-icon"><i class="fa fa-times-circle-o"></i></div><div class="icon-item-name"><span>times-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-times-rectangle"><div class="icon-item-icon"><i class="fa fa-times-rectangle"></i></div><div class="icon-item-name"><span>times-rectangle</span></div></li>
+                <li class="icon-item" data-class="fa fa-times-rectangle-o"><div class="icon-item-icon"><i class="fa fa-times-rectangle-o"></i></div><div class="icon-item-name"><span>times-rectangle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-tint"><div class="icon-item-icon"><i class="fa fa-tint"></i></div><div class="icon-item-name"><span>tint</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-down"><div class="icon-item-icon"><i class="fa fa-toggle-down"></i></div><div class="icon-item-name"><span>toggle-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-left"><div class="icon-item-icon"><i class="fa fa-toggle-left"></i></div><div class="icon-item-name"><span>toggle-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-off"><div class="icon-item-icon"><i class="fa fa-toggle-off"></i></div><div class="icon-item-name"><span>toggle-off</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-on"><div class="icon-item-icon"><i class="fa fa-toggle-on"></i></div><div class="icon-item-name"><span>toggle-on</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-right"><div class="icon-item-icon"><i class="fa fa-toggle-right"></i></div><div class="icon-item-name"><span>toggle-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-up"><div class="icon-item-icon"><i class="fa fa-toggle-up"></i></div><div class="icon-item-name"><span>toggle-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-trademark"><div class="icon-item-icon"><i class="fa fa-trademark"></i></div><div class="icon-item-name"><span>trademark</span></div></li>
+                <li class="icon-item" data-class="fa fa-trash"><div class="icon-item-icon"><i class="fa fa-trash"></i></div><div class="icon-item-name"><span>trash</span></div></li>
+                <li class="icon-item" data-class="fa fa-trash-o"><div class="icon-item-icon"><i class="fa fa-trash-o"></i></div><div class="icon-item-name"><span>trash-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-tree"><div class="icon-item-icon"><i class="fa fa-tree"></i></div><div class="icon-item-name"><span>tree</span></div></li>
+                <li class="icon-item" data-class="fa fa-trophy"><div class="icon-item-icon"><i class="fa fa-trophy"></i></div><div class="icon-item-name"><span>trophy</span></div></li>
+                <li class="icon-item" data-class="fa fa-truck"><div class="icon-item-icon"><i class="fa fa-truck"></i></div><div class="icon-item-name"><span>truck</span></div></li>
+                <li class="icon-item" data-class="fa fa-tty"><div class="icon-item-icon"><i class="fa fa-tty"></i></div><div class="icon-item-name"><span>tty</span></div></li>
+                <li class="icon-item" data-class="fa fa-tv"><div class="icon-item-icon"><i class="fa fa-tv"></i></div><div class="icon-item-name"><span>tv</span></div></li>
+                <li class="icon-item" data-class="fa fa-umbrella"><div class="icon-item-icon"><i class="fa fa-umbrella"></i></div><div class="icon-item-name"><span>umbrella</span></div></li>
+                <li class="icon-item" data-class="fa fa-universal-access"><div class="icon-item-icon"><i class="fa fa-universal-access"></i></div><div class="icon-item-name"><span>universal-access</span></div></li>
+                <li class="icon-item" data-class="fa fa-university"><div class="icon-item-icon"><i class="fa fa-university"></i></div><div class="icon-item-name"><span>university</span></div></li>
+                <li class="icon-item" data-class="fa fa-unlock"><div class="icon-item-icon"><i class="fa fa-unlock"></i></div><div class="icon-item-name"><span>unlock</span></div></li>
+                <li class="icon-item" data-class="fa fa-unlock-alt"><div class="icon-item-icon"><i class="fa fa-unlock-alt"></i></div><div class="icon-item-name"><span>unlock-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-unsorted"><div class="icon-item-icon"><i class="fa fa-unsorted"></i></div><div class="icon-item-name"><span>unsorted</span></div></li>
+                <li class="icon-item" data-class="fa fa-upload"><div class="icon-item-icon"><i class="fa fa-upload"></i></div><div class="icon-item-name"><span>upload</span></div></li>
+                <li class="icon-item" data-class="fa fa-user"><div class="icon-item-icon"><i class="fa fa-user"></i></div><div class="icon-item-name"><span>user</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-circle"><div class="icon-item-icon"><i class="fa fa-user-circle"></i></div><div class="icon-item-name"><span>user-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-circle-o"><div class="icon-item-icon"><i class="fa fa-user-circle-o"></i></div><div class="icon-item-name"><span>user-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-o"><div class="icon-item-icon"><i class="fa fa-user-o"></i></div><div class="icon-item-name"><span>user-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-plus"><div class="icon-item-icon"><i class="fa fa-user-plus"></i></div><div class="icon-item-name"><span>user-plus</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-secret"><div class="icon-item-icon"><i class="fa fa-user-secret"></i></div><div class="icon-item-name"><span>user-secret</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-times"><div class="icon-item-icon"><i class="fa fa-user-times"></i></div><div class="icon-item-name"><span>user-times</span></div></li>
+                <li class="icon-item" data-class="fa fa-users"><div class="icon-item-icon"><i class="fa fa-users"></i></div><div class="icon-item-name"><span>users</span></div></li>
+                <li class="icon-item" data-class="fa fa-vcard"><div class="icon-item-icon"><i class="fa fa-vcard"></i></div><div class="icon-item-name"><span>vcard</span></div></li>
+                <li class="icon-item" data-class="fa fa-vcard-o"><div class="icon-item-icon"><i class="fa fa-vcard-o"></i></div><div class="icon-item-name"><span>vcard-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-video-camera"><div class="icon-item-icon"><i class="fa fa-video-camera"></i></div><div class="icon-item-name"><span>video-camera</span></div></li>
+                <li class="icon-item" data-class="fa fa-volume-control-phone"><div class="icon-item-icon"><i class="fa fa-volume-control-phone"></i></div><div class="icon-item-name"><span>volume-control-phone</span></div></li>
+                <li class="icon-item" data-class="fa fa-volume-down"><div class="icon-item-icon"><i class="fa fa-volume-down"></i></div><div class="icon-item-name"><span>volume-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-volume-off"><div class="icon-item-icon"><i class="fa fa-volume-off"></i></div><div class="icon-item-name"><span>volume-off</span></div></li>
+                <li class="icon-item" data-class="fa fa-volume-up"><div class="icon-item-icon"><i class="fa fa-volume-up"></i></div><div class="icon-item-name"><span>volume-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-warning"><div class="icon-item-icon"><i class="fa fa-warning"></i></div><div class="icon-item-name"><span>warning</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair"><div class="icon-item-icon"><i class="fa fa-wheelchair"></i></div><div class="icon-item-name"><span>wheelchair</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair-alt"><div class="icon-item-icon"><i class="fa fa-wheelchair-alt"></i></div><div class="icon-item-name"><span>wheelchair-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-wifi"><div class="icon-item-icon"><i class="fa fa-wifi"></i></div><div class="icon-item-name"><span>wifi</span></div></li>
+                <li class="icon-item" data-class="fa fa-window-close"><div class="icon-item-icon"><i class="fa fa-window-close"></i></div><div class="icon-item-name"><span>window-close</span></div></li>
+                <li class="icon-item" data-class="fa fa-window-close-o"><div class="icon-item-icon"><i class="fa fa-window-close-o"></i></div><div class="icon-item-name"><span>window-close-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-window-maximize"><div class="icon-item-icon"><i class="fa fa-window-maximize"></i></div><div class="icon-item-name"><span>window-maximize</span></div></li>
+                <li class="icon-item" data-class="fa fa-window-minimize"><div class="icon-item-icon"><i class="fa fa-window-minimize"></i></div><div class="icon-item-name"><span>window-minimize</span></div></li>
+                <li class="icon-item" data-class="fa fa-window-restore"><div class="icon-item-icon"><i class="fa fa-window-restore"></i></div><div class="icon-item-name"><span>window-restore</span></div></li>
+                <li class="icon-item" data-class="fa fa-wrench"><div class="icon-item-icon"><i class="fa fa-wrench"></i></div><div class="icon-item-name"><span>wrench</span></div></li>
+            </ul>
+        </section>
+        <section id="accessibility">
+            <h2 class="page-header">Accessibility Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-american-sign-language-interpreting"><div class="icon-item-icon"><i class="fa fa-american-sign-language-interpreting"></i></div><div class="icon-item-name"><span>american-sign-language-interpreting</span></div></li>
+                <li class="icon-item" data-class="fa fa-asl-interpreting"><div class="icon-item-icon"><i class="fa fa-asl-interpreting"></i></div><div class="icon-item-name"><span>asl-interpreting</span></div></li>
+                <li class="icon-item" data-class="fa fa-assistive-listening-systems"><div class="icon-item-icon"><i class="fa fa-assistive-listening-systems"></i></div><div class="icon-item-name"><span>assistive-listening-systems</span></div></li>
+                <li class="icon-item" data-class="fa fa-audio-description"><div class="icon-item-icon"><i class="fa fa-audio-description"></i></div><div class="icon-item-name"><span>audio-description</span></div></li>
+                <li class="icon-item" data-class="fa fa-blind"><div class="icon-item-icon"><i class="fa fa-blind"></i></div><div class="icon-item-name"><span>blind</span></div></li>
+                <li class="icon-item" data-class="fa fa-braille"><div class="icon-item-icon"><i class="fa fa-braille"></i></div><div class="icon-item-name"><span>braille</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc"><div class="icon-item-icon"><i class="fa fa-cc"></i></div><div class="icon-item-name"><span>cc</span></div></li>
+                <li class="icon-item" data-class="fa fa-deaf"><div class="icon-item-icon"><i class="fa fa-deaf"></i></div><div class="icon-item-name"><span>deaf</span></div></li>
+                <li class="icon-item" data-class="fa fa-deafness"><div class="icon-item-icon"><i class="fa fa-deafness"></i></div><div class="icon-item-name"><span>deafness</span></div></li>
+                <li class="icon-item" data-class="fa fa-hard-of-hearing"><div class="icon-item-icon"><i class="fa fa-hard-of-hearing"></i></div><div class="icon-item-name"><span>hard-of-hearing</span></div></li>
+                <li class="icon-item" data-class="fa fa-low-vision"><div class="icon-item-icon"><i class="fa fa-low-vision"></i></div><div class="icon-item-name"><span>low-vision</span></div></li>
+                <li class="icon-item" data-class="fa fa-question-circle-o"><div class="icon-item-icon"><i class="fa fa-question-circle-o"></i></div><div class="icon-item-name"><span>question-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-sign-language"><div class="icon-item-icon"><i class="fa fa-sign-language"></i></div><div class="icon-item-name"><span>sign-language</span></div></li>
+                <li class="icon-item" data-class="fa fa-signing"><div class="icon-item-icon"><i class="fa fa-signing"></i></div><div class="icon-item-name"><span>signing</span></div></li>
+                <li class="icon-item" data-class="fa fa-tty"><div class="icon-item-icon"><i class="fa fa-tty"></i></div><div class="icon-item-name"><span>tty</span></div></li>
+                <li class="icon-item" data-class="fa fa-universal-access"><div class="icon-item-icon"><i class="fa fa-universal-access"></i></div><div class="icon-item-name"><span>universal-access</span></div></li>
+                <li class="icon-item" data-class="fa fa-volume-control-phone"><div class="icon-item-icon"><i class="fa fa-volume-control-phone"></i></div><div class="icon-item-name"><span>volume-control-phone</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair"><div class="icon-item-icon"><i class="fa fa-wheelchair"></i></div><div class="icon-item-name"><span>wheelchair</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair-alt"><div class="icon-item-icon"><i class="fa fa-wheelchair-alt"></i></div><div class="icon-item-name"><span>wheelchair-alt</span></div></li>
+            </ul>
+        </section>
+        <section id="hand">
+            <h2 class="page-header">Hand Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-hand-grab-o"><div class="icon-item-icon"><i class="fa fa-hand-grab-o"></i></div><div class="icon-item-name"><span>hand-grab-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-lizard-o"><div class="icon-item-icon"><i class="fa fa-hand-lizard-o"></i></div><div class="icon-item-name"><span>hand-lizard-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-down"><div class="icon-item-icon"><i class="fa fa-hand-o-down"></i></div><div class="icon-item-name"><span>hand-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-left"><div class="icon-item-icon"><i class="fa fa-hand-o-left"></i></div><div class="icon-item-name"><span>hand-o-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-right"><div class="icon-item-icon"><i class="fa fa-hand-o-right"></i></div><div class="icon-item-name"><span>hand-o-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-up"><div class="icon-item-icon"><i class="fa fa-hand-o-up"></i></div><div class="icon-item-name"><span>hand-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-paper-o"><div class="icon-item-icon"><i class="fa fa-hand-paper-o"></i></div><div class="icon-item-name"><span>hand-paper-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-peace-o"><div class="icon-item-icon"><i class="fa fa-hand-peace-o"></i></div><div class="icon-item-name"><span>hand-peace-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-pointer-o"><div class="icon-item-icon"><i class="fa fa-hand-pointer-o"></i></div><div class="icon-item-name"><span>hand-pointer-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-rock-o"><div class="icon-item-icon"><i class="fa fa-hand-rock-o"></i></div><div class="icon-item-name"><span>hand-rock-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-scissors-o"><div class="icon-item-icon"><i class="fa fa-hand-scissors-o"></i></div><div class="icon-item-name"><span>hand-scissors-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-spock-o"><div class="icon-item-icon"><i class="fa fa-hand-spock-o"></i></div><div class="icon-item-name"><span>hand-spock-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-stop-o"><div class="icon-item-icon"><i class="fa fa-hand-stop-o"></i></div><div class="icon-item-name"><span>hand-stop-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-down"><div class="icon-item-icon"><i class="fa fa-thumbs-down"></i></div><div class="icon-item-name"><span>thumbs-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-o-down"><div class="icon-item-icon"><i class="fa fa-thumbs-o-down"></i></div><div class="icon-item-name"><span>thumbs-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-o-up"><div class="icon-item-icon"><i class="fa fa-thumbs-o-up"></i></div><div class="icon-item-name"><span>thumbs-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-thumbs-up"><div class="icon-item-icon"><i class="fa fa-thumbs-up"></i></div><div class="icon-item-name"><span>thumbs-up</span></div></li>
+            </ul>
+        </section>
+        <section id="transportation">
+            <h2 class="page-header">Transportation Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-ambulance"><div class="icon-item-icon"><i class="fa fa-ambulance"></i></div><div class="icon-item-name"><span>ambulance</span></div></li>
+                <li class="icon-item" data-class="fa fa-automobile"><div class="icon-item-icon"><i class="fa fa-automobile"></i></div><div class="icon-item-name"><span>automobile</span></div></li>
+                <li class="icon-item" data-class="fa fa-bicycle"><div class="icon-item-icon"><i class="fa fa-bicycle"></i></div><div class="icon-item-name"><span>bicycle</span></div></li>
+                <li class="icon-item" data-class="fa fa-bus"><div class="icon-item-icon"><i class="fa fa-bus"></i></div><div class="icon-item-name"><span>bus</span></div></li>
+                <li class="icon-item" data-class="fa fa-cab"><div class="icon-item-icon"><i class="fa fa-cab"></i></div><div class="icon-item-name"><span>cab</span></div></li>
+                <li class="icon-item" data-class="fa fa-car"><div class="icon-item-icon"><i class="fa fa-car"></i></div><div class="icon-item-name"><span>car</span></div></li>
+                <li class="icon-item" data-class="fa fa-fighter-jet"><div class="icon-item-icon"><i class="fa fa-fighter-jet"></i></div><div class="icon-item-name"><span>fighter-jet</span></div></li>
+                <li class="icon-item" data-class="fa fa-motorcycle"><div class="icon-item-icon"><i class="fa fa-motorcycle"></i></div><div class="icon-item-name"><span>motorcycle</span></div></li>
+                <li class="icon-item" data-class="fa fa-plane"><div class="icon-item-icon"><i class="fa fa-plane"></i></div><div class="icon-item-name"><span>plane</span></div></li>
+                <li class="icon-item" data-class="fa fa-rocket"><div class="icon-item-icon"><i class="fa fa-rocket"></i></div><div class="icon-item-name"><span>rocket</span></div></li>
+                <li class="icon-item" data-class="fa fa-ship"><div class="icon-item-icon"><i class="fa fa-ship"></i></div><div class="icon-item-name"><span>ship</span></div></li>
+                <li class="icon-item" data-class="fa fa-space-shuttle"><div class="icon-item-icon"><i class="fa fa-space-shuttle"></i></div><div class="icon-item-name"><span>space-shuttle</span></div></li>
+                <li class="icon-item" data-class="fa fa-subway"><div class="icon-item-icon"><i class="fa fa-subway"></i></div><div class="icon-item-name"><span>subway</span></div></li>
+                <li class="icon-item" data-class="fa fa-taxi"><div class="icon-item-icon"><i class="fa fa-taxi"></i></div><div class="icon-item-name"><span>taxi</span></div></li>
+                <li class="icon-item" data-class="fa fa-train"><div class="icon-item-icon"><i class="fa fa-train"></i></div><div class="icon-item-name"><span>train</span></div></li>
+                <li class="icon-item" data-class="fa fa-truck"><div class="icon-item-icon"><i class="fa fa-truck"></i></div><div class="icon-item-name"><span>truck</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair"><div class="icon-item-icon"><i class="fa fa-wheelchair"></i></div><div class="icon-item-name"><span>wheelchair</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair-alt"><div class="icon-item-icon"><i class="fa fa-wheelchair-alt"></i></div><div class="icon-item-name"><span>wheelchair-alt</span></div></li>
+            </ul>
+        </section>
+        <section id="gender">
+            <h2 class="page-header">Gender Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-genderless"><div class="icon-item-icon"><i class="fa fa-genderless"></i></div><div class="icon-item-name"><span>genderless</span></div></li>
+                <li class="icon-item" data-class="fa fa-intersex"><div class="icon-item-icon"><i class="fa fa-intersex"></i></div><div class="icon-item-name"><span>intersex</span></div></li>
+                <li class="icon-item" data-class="fa fa-mars"><div class="icon-item-icon"><i class="fa fa-mars"></i></div><div class="icon-item-name"><span>mars</span></div></li>
+                <li class="icon-item" data-class="fa fa-mars-double"><div class="icon-item-icon"><i class="fa fa-mars-double"></i></div><div class="icon-item-name"><span>mars-double</span></div></li>
+                <li class="icon-item" data-class="fa fa-mars-stroke"><div class="icon-item-icon"><i class="fa fa-mars-stroke"></i></div><div class="icon-item-name"><span>mars-stroke</span></div></li>
+                <li class="icon-item" data-class="fa fa-mars-stroke-h"><div class="icon-item-icon"><i class="fa fa-mars-stroke-h"></i></div><div class="icon-item-name"><span>mars-stroke-h</span></div></li>
+                <li class="icon-item" data-class="fa fa-mars-stroke-v"><div class="icon-item-icon"><i class="fa fa-mars-stroke-v"></i></div><div class="icon-item-name"><span>mars-stroke-v</span></div></li>
+                <li class="icon-item" data-class="fa fa-mercury"><div class="icon-item-icon"><i class="fa fa-mercury"></i></div><div class="icon-item-name"><span>mercury</span></div></li>
+                <li class="icon-item" data-class="fa fa-neuter"><div class="icon-item-icon"><i class="fa fa-neuter"></i></div><div class="icon-item-name"><span>neuter</span></div></li>
+                <li class="icon-item" data-class="fa fa-transgender"><div class="icon-item-icon"><i class="fa fa-transgender"></i></div><div class="icon-item-name"><span>transgender</span></div></li>
+                <li class="icon-item" data-class="fa fa-transgender-alt"><div class="icon-item-icon"><i class="fa fa-transgender-alt"></i></div><div class="icon-item-name"><span>transgender-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-venus"><div class="icon-item-icon"><i class="fa fa-venus"></i></div><div class="icon-item-name"><span>venus</span></div></li>
+                <li class="icon-item" data-class="fa fa-venus-double"><div class="icon-item-icon"><i class="fa fa-venus-double"></i></div><div class="icon-item-name"><span>venus-double</span></div></li>
+                <li class="icon-item" data-class="fa fa-venus-mars"><div class="icon-item-icon"><i class="fa fa-venus-mars"></i></div><div class="icon-item-name"><span>venus-mars</span></div></li>
+            </ul>
+        </section>
+        <section id="file-type">
+            <h2 class="page-header">File Type Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-file"><div class="icon-item-icon"><i class="fa fa-file"></i></div><div class="icon-item-name"><span>file</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-archive-o"><div class="icon-item-icon"><i class="fa fa-file-archive-o"></i></div><div class="icon-item-name"><span>file-archive-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-audio-o"><div class="icon-item-icon"><i class="fa fa-file-audio-o"></i></div><div class="icon-item-name"><span>file-audio-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-code-o"><div class="icon-item-icon"><i class="fa fa-file-code-o"></i></div><div class="icon-item-name"><span>file-code-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-excel-o"><div class="icon-item-icon"><i class="fa fa-file-excel-o"></i></div><div class="icon-item-name"><span>file-excel-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-image-o"><div class="icon-item-icon"><i class="fa fa-file-image-o"></i></div><div class="icon-item-name"><span>file-image-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-movie-o"><div class="icon-item-icon"><i class="fa fa-file-movie-o"></i></div><div class="icon-item-name"><span>file-movie-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-o"><div class="icon-item-icon"><i class="fa fa-file-o"></i></div><div class="icon-item-name"><span>file-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-pdf-o"><div class="icon-item-icon"><i class="fa fa-file-pdf-o"></i></div><div class="icon-item-name"><span>file-pdf-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-photo-o"><div class="icon-item-icon"><i class="fa fa-file-photo-o"></i></div><div class="icon-item-name"><span>file-photo-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-picture-o"><div class="icon-item-icon"><i class="fa fa-file-picture-o"></i></div><div class="icon-item-name"><span>file-picture-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-powerpoint-o"><div class="icon-item-icon"><i class="fa fa-file-powerpoint-o"></i></div><div class="icon-item-name"><span>file-powerpoint-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-sound-o"><div class="icon-item-icon"><i class="fa fa-file-sound-o"></i></div><div class="icon-item-name"><span>file-sound-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-text"><div class="icon-item-icon"><i class="fa fa-file-text"></i></div><div class="icon-item-name"><span>file-text</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-text-o"><div class="icon-item-icon"><i class="fa fa-file-text-o"></i></div><div class="icon-item-name"><span>file-text-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-video-o"><div class="icon-item-icon"><i class="fa fa-file-video-o"></i></div><div class="icon-item-name"><span>file-video-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-word-o"><div class="icon-item-icon"><i class="fa fa-file-word-o"></i></div><div class="icon-item-name"><span>file-word-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-zip-o"><div class="icon-item-icon"><i class="fa fa-file-zip-o"></i></div><div class="icon-item-name"><span>file-zip-o</span></div></li>
+            </ul>
+        </section>
+        <section id="spinner">
+            <h2 class="page-header">Spinner Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-spin fa-circle-o-notch"><div class="icon-item-icon"><i class="fa fa-spin fa-circle-o-notch"></i></div><div class="icon-item-name"><span>circle-o-notch</span></div></li>
+                <li class="icon-item" data-class="fa fa-spin fa-cog"><div class="icon-item-icon"><i class="fa fa-spin fa-cog"></i></div><div class="icon-item-name"><span>cog</span></div></li>
+                <li class="icon-item" data-class="fa fa-spin fa-gear"><div class="icon-item-icon"><i class="fa fa-spin fa-gear"></i></div><div class="icon-item-name"><span>gear</span></div></li>
+                <li class="icon-item" data-class="fa fa-spin fa-refresh"><div class="icon-item-icon"><i class="fa fa-spin fa-refresh"></i></div><div class="icon-item-name"><span>refresh</span></div></li>
+                <li class="icon-item" data-class="fa fa-spin fa-spinner"><div class="icon-item-icon"><i class="fa fa-spin fa-spinner"></i></div><div class="icon-item-name"><span>spinner</span></div></li>
+            </ul>
+        </section>
+        <section id="form-control">
+            <h2 class="page-header">Form Control Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-check-square"><div class="icon-item-icon"><i class="fa fa-check-square"></i></div><div class="icon-item-name"><span>check-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-check-square-o"><div class="icon-item-icon"><i class="fa fa-check-square-o"></i></div><div class="icon-item-name"><span>check-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle"><div class="icon-item-icon"><i class="fa fa-circle"></i></div><div class="icon-item-name"><span>circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-circle-o"><div class="icon-item-icon"><i class="fa fa-circle-o"></i></div><div class="icon-item-name"><span>circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-dot-circle-o"><div class="icon-item-icon"><i class="fa fa-dot-circle-o"></i></div><div class="icon-item-name"><span>dot-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus-square"><div class="icon-item-icon"><i class="fa fa-minus-square"></i></div><div class="icon-item-name"><span>minus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-minus-square-o"><div class="icon-item-icon"><i class="fa fa-minus-square-o"></i></div><div class="icon-item-name"><span>minus-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-square"><div class="icon-item-icon"><i class="fa fa-plus-square"></i></div><div class="icon-item-name"><span>plus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-square-o"><div class="icon-item-icon"><i class="fa fa-plus-square-o"></i></div><div class="icon-item-name"><span>plus-square-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-square"><div class="icon-item-icon"><i class="fa fa-square"></i></div><div class="icon-item-name"><span>square</span></div></li>
+                <li class="icon-item" data-class="fa fa-square-o"><div class="icon-item-icon"><i class="fa fa-square-o"></i></div><div class="icon-item-name"><span>square-o</span></div></li>
+            </ul>
+        </section>
+        <section id="payment">
+            <h2 class="page-header">Payment Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-cc-amex"><div class="icon-item-icon"><i class="fa fa-cc-amex"></i></div><div class="icon-item-name"><span>cc-amex</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-diners-club"><div class="icon-item-icon"><i class="fa fa-cc-diners-club"></i></div><div class="icon-item-name"><span>cc-diners-club</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-discover"><div class="icon-item-icon"><i class="fa fa-cc-discover"></i></div><div class="icon-item-name"><span>cc-discover</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-jcb"><div class="icon-item-icon"><i class="fa fa-cc-jcb"></i></div><div class="icon-item-name"><span>cc-jcb</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-mastercard"><div class="icon-item-icon"><i class="fa fa-cc-mastercard"></i></div><div class="icon-item-name"><span>cc-mastercard</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-paypal"><div class="icon-item-icon"><i class="fa fa-cc-paypal"></i></div><div class="icon-item-name"><span>cc-paypal</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-stripe"><div class="icon-item-icon"><i class="fa fa-cc-stripe"></i></div><div class="icon-item-name"><span>cc-stripe</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-visa"><div class="icon-item-icon"><i class="fa fa-cc-visa"></i></div><div class="icon-item-name"><span>cc-visa</span></div></li>
+                <li class="icon-item" data-class="fa fa-credit-card"><div class="icon-item-icon"><i class="fa fa-credit-card"></i></div><div class="icon-item-name"><span>credit-card</span></div></li>
+                <li class="icon-item" data-class="fa fa-credit-card-alt"><div class="icon-item-icon"><i class="fa fa-credit-card-alt"></i></div><div class="icon-item-name"><span>credit-card-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-wallet"><div class="icon-item-icon"><i class="fa fa-google-wallet"></i></div><div class="icon-item-name"><span>google-wallet</span></div></li>
+                <li class="icon-item" data-class="fa fa-paypal"><div class="icon-item-icon"><i class="fa fa-paypal"></i></div><div class="icon-item-name"><span>paypal</span></div></li>
+            </ul>
+        </section>
+        <section id="chart">
+            <h2 class="page-header">Chart Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-area-chart"><div class="icon-item-icon"><i class="fa fa-area-chart"></i></div><div class="icon-item-name"><span>area-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-bar-chart"><div class="icon-item-icon"><i class="fa fa-bar-chart"></i></div><div class="icon-item-name"><span>bar-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-bar-chart-o"><div class="icon-item-icon"><i class="fa fa-bar-chart-o"></i></div><div class="icon-item-name"><span>bar-chart-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-line-chart"><div class="icon-item-icon"><i class="fa fa-line-chart"></i></div><div class="icon-item-name"><span>line-chart</span></div></li>
+                <li class="icon-item" data-class="fa fa-pie-chart"><div class="icon-item-icon"><i class="fa fa-pie-chart"></i></div><div class="icon-item-name"><span>pie-chart</span></div></li>
+            </ul>
+        </section>
+        <section id="currency">
+            <h2 class="page-header">Currency Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-bitcoin"><div class="icon-item-icon"><i class="fa fa-bitcoin"></i></div><div class="icon-item-name"><span>bitcoin</span></div></li>
+                <li class="icon-item" data-class="fa fa-btc"><div class="icon-item-icon"><i class="fa fa-btc"></i></div><div class="icon-item-name"><span>btc</span></div></li>
+                <li class="icon-item" data-class="fa fa-cny"><div class="icon-item-icon"><i class="fa fa-cny"></i></div><div class="icon-item-name"><span>cny</span></div></li>
+                <li class="icon-item" data-class="fa fa-dollar"><div class="icon-item-icon"><i class="fa fa-dollar"></i></div><div class="icon-item-name"><span>dollar</span></div></li>
+                <li class="icon-item" data-class="fa fa-eur"><div class="icon-item-icon"><i class="fa fa-eur"></i></div><div class="icon-item-name"><span>eur</span></div></li>
+                <li class="icon-item" data-class="fa fa-euro"><div class="icon-item-icon"><i class="fa fa-euro"></i></div><div class="icon-item-name"><span>euro</span></div></li>
+                <li class="icon-item" data-class="fa fa-gbp"><div class="icon-item-icon"><i class="fa fa-gbp"></i></div><div class="icon-item-name"><span>gbp</span></div></li>
+                <li class="icon-item" data-class="fa fa-gg"><div class="icon-item-icon"><i class="fa fa-gg"></i></div><div class="icon-item-name"><span>gg</span></div></li>
+                <li class="icon-item" data-class="fa fa-gg-circle"><div class="icon-item-icon"><i class="fa fa-gg-circle"></i></div><div class="icon-item-name"><span>gg-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-ils"><div class="icon-item-icon"><i class="fa fa-ils"></i></div><div class="icon-item-name"><span>ils</span></div></li>
+                <li class="icon-item" data-class="fa fa-inr"><div class="icon-item-icon"><i class="fa fa-inr"></i></div><div class="icon-item-name"><span>inr</span></div></li>
+                <li class="icon-item" data-class="fa fa-jpy"><div class="icon-item-icon"><i class="fa fa-jpy"></i></div><div class="icon-item-name"><span>jpy</span></div></li>
+                <li class="icon-item" data-class="fa fa-krw"><div class="icon-item-icon"><i class="fa fa-krw"></i></div><div class="icon-item-name"><span>krw</span></div></li>
+                <li class="icon-item" data-class="fa fa-money"><div class="icon-item-icon"><i class="fa fa-money"></i></div><div class="icon-item-name"><span>money</span></div></li>
+                <li class="icon-item" data-class="fa fa-rmb"><div class="icon-item-icon"><i class="fa fa-rmb"></i></div><div class="icon-item-name"><span>rmb</span></div></li>
+                <li class="icon-item" data-class="fa fa-rouble"><div class="icon-item-icon"><i class="fa fa-rouble"></i></div><div class="icon-item-name"><span>rouble</span></div></li>
+                <li class="icon-item" data-class="fa fa-rub"><div class="icon-item-icon"><i class="fa fa-rub"></i></div><div class="icon-item-name"><span>rub</span></div></li>
+                <li class="icon-item" data-class="fa fa-ruble"><div class="icon-item-icon"><i class="fa fa-ruble"></i></div><div class="icon-item-name"><span>ruble</span></div></li>
+                <li class="icon-item" data-class="fa fa-rupee"><div class="icon-item-icon"><i class="fa fa-rupee"></i></div><div class="icon-item-name"><span>rupee</span></div></li>
+                <li class="icon-item" data-class="fa fa-shekel"><div class="icon-item-icon"><i class="fa fa-shekel"></i></div><div class="icon-item-name"><span>shekel</span></div></li>
+                <li class="icon-item" data-class="fa fa-sheqel"><div class="icon-item-icon"><i class="fa fa-sheqel"></i></div><div class="icon-item-name"><span>sheqel</span></div></li>
+                <li class="icon-item" data-class="fa fa-try"><div class="icon-item-icon"><i class="fa fa-try"></i></div><div class="icon-item-name"><span>try</span></div></li>
+                <li class="icon-item" data-class="fa fa-turkish-lira"><div class="icon-item-icon"><i class="fa fa-turkish-lira"></i></div><div class="icon-item-name"><span>turkish-lira</span></div></li>
+                <li class="icon-item" data-class="fa fa-usd"><div class="icon-item-icon"><i class="fa fa-usd"></i></div><div class="icon-item-name"><span>usd</span></div></li>
+                <li class="icon-item" data-class="fa fa-viacoin"><div class="icon-item-icon"><i class="fa fa-viacoin"></i></div><div class="icon-item-name"><span>viacoin</span></div></li>
+                <li class="icon-item" data-class="fa fa-won"><div class="icon-item-icon"><i class="fa fa-won"></i></div><div class="icon-item-name"><span>won</span></div></li>
+                <li class="icon-item" data-class="fa fa-yen"><div class="icon-item-icon"><i class="fa fa-yen"></i></div><div class="icon-item-name"><span>yen</span></div></li>
+            </ul>
+        </section>
+        <section id="text-editor">
+            <h2 class="page-header">Text Editor Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-align-center"><div class="icon-item-icon"><i class="fa fa-align-center"></i></div><div class="icon-item-name"><span>align-center</span></div></li>
+                <li class="icon-item" data-class="fa fa-align-justify"><div class="icon-item-icon"><i class="fa fa-align-justify"></i></div><div class="icon-item-name"><span>align-justify</span></div></li>
+                <li class="icon-item" data-class="fa fa-align-left"><div class="icon-item-icon"><i class="fa fa-align-left"></i></div><div class="icon-item-name"><span>align-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-align-right"><div class="icon-item-icon"><i class="fa fa-align-right"></i></div><div class="icon-item-name"><span>align-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-bold"><div class="icon-item-icon"><i class="fa fa-bold"></i></div><div class="icon-item-name"><span>bold</span></div></li>
+                <li class="icon-item" data-class="fa fa-chain"><div class="icon-item-icon"><i class="fa fa-chain"></i></div><div class="icon-item-name"><span>chain</span></div></li>
+                <li class="icon-item" data-class="fa fa-chain-broken"><div class="icon-item-icon"><i class="fa fa-chain-broken"></i></div><div class="icon-item-name"><span>chain-broken</span></div></li>
+                <li class="icon-item" data-class="fa fa-clipboard"><div class="icon-item-icon"><i class="fa fa-clipboard"></i></div><div class="icon-item-name"><span>clipboard</span></div></li>
+                <li class="icon-item" data-class="fa fa-columns"><div class="icon-item-icon"><i class="fa fa-columns"></i></div><div class="icon-item-name"><span>columns</span></div></li>
+                <li class="icon-item" data-class="fa fa-copy"><div class="icon-item-icon"><i class="fa fa-copy"></i></div><div class="icon-item-name"><span>copy</span></div></li>
+                <li class="icon-item" data-class="fa fa-cut"><div class="icon-item-icon"><i class="fa fa-cut"></i></div><div class="icon-item-name"><span>cut</span></div></li>
+                <li class="icon-item" data-class="fa fa-dedent"><div class="icon-item-icon"><i class="fa fa-dedent"></i></div><div class="icon-item-name"><span>dedent</span></div></li>
+                <li class="icon-item" data-class="fa fa-eraser"><div class="icon-item-icon"><i class="fa fa-eraser"></i></div><div class="icon-item-name"><span>eraser</span></div></li>
+                <li class="icon-item" data-class="fa fa-file"><div class="icon-item-icon"><i class="fa fa-file"></i></div><div class="icon-item-name"><span>file</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-o"><div class="icon-item-icon"><i class="fa fa-file-o"></i></div><div class="icon-item-name"><span>file-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-text"><div class="icon-item-icon"><i class="fa fa-file-text"></i></div><div class="icon-item-name"><span>file-text</span></div></li>
+                <li class="icon-item" data-class="fa fa-file-text-o"><div class="icon-item-icon"><i class="fa fa-file-text-o"></i></div><div class="icon-item-name"><span>file-text-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-files-o"><div class="icon-item-icon"><i class="fa fa-files-o"></i></div><div class="icon-item-name"><span>files-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-floppy-o"><div class="icon-item-icon"><i class="fa fa-floppy-o"></i></div><div class="icon-item-name"><span>floppy-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-font"><div class="icon-item-icon"><i class="fa fa-font"></i></div><div class="icon-item-name"><span>font</span></div></li>
+                <li class="icon-item" data-class="fa fa-header"><div class="icon-item-icon"><i class="fa fa-header"></i></div><div class="icon-item-name"><span>header</span></div></li>
+                <li class="icon-item" data-class="fa fa-indent"><div class="icon-item-icon"><i class="fa fa-indent"></i></div><div class="icon-item-name"><span>indent</span></div></li>
+                <li class="icon-item" data-class="fa fa-italic"><div class="icon-item-icon"><i class="fa fa-italic"></i></div><div class="icon-item-name"><span>italic</span></div></li>
+                <li class="icon-item" data-class="fa fa-link"><div class="icon-item-icon"><i class="fa fa-link"></i></div><div class="icon-item-name"><span>link</span></div></li>
+                <li class="icon-item" data-class="fa fa-list"><div class="icon-item-icon"><i class="fa fa-list"></i></div><div class="icon-item-name"><span>list</span></div></li>
+                <li class="icon-item" data-class="fa fa-list-alt"><div class="icon-item-icon"><i class="fa fa-list-alt"></i></div><div class="icon-item-name"><span>list-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-list-ol"><div class="icon-item-icon"><i class="fa fa-list-ol"></i></div><div class="icon-item-name"><span>list-ol</span></div></li>
+                <li class="icon-item" data-class="fa fa-list-ul"><div class="icon-item-icon"><i class="fa fa-list-ul"></i></div><div class="icon-item-name"><span>list-ul</span></div></li>
+                <li class="icon-item" data-class="fa fa-outdent"><div class="icon-item-icon"><i class="fa fa-outdent"></i></div><div class="icon-item-name"><span>outdent</span></div></li>
+                <li class="icon-item" data-class="fa fa-paperclip"><div class="icon-item-icon"><i class="fa fa-paperclip"></i></div><div class="icon-item-name"><span>paperclip</span></div></li>
+                <li class="icon-item" data-class="fa fa-paragraph"><div class="icon-item-icon"><i class="fa fa-paragraph"></i></div><div class="icon-item-name"><span>paragraph</span></div></li>
+                <li class="icon-item" data-class="fa fa-paste"><div class="icon-item-icon"><i class="fa fa-paste"></i></div><div class="icon-item-name"><span>paste</span></div></li>
+                <li class="icon-item" data-class="fa fa-repeat"><div class="icon-item-icon"><i class="fa fa-repeat"></i></div><div class="icon-item-name"><span>repeat</span></div></li>
+                <li class="icon-item" data-class="fa fa-rotate-left"><div class="icon-item-icon"><i class="fa fa-rotate-left"></i></div><div class="icon-item-name"><span>rotate-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-rotate-right"><div class="icon-item-icon"><i class="fa fa-rotate-right"></i></div><div class="icon-item-name"><span>rotate-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-save"><div class="icon-item-icon"><i class="fa fa-save"></i></div><div class="icon-item-name"><span>save</span></div></li>
+                <li class="icon-item" data-class="fa fa-scissors"><div class="icon-item-icon"><i class="fa fa-scissors"></i></div><div class="icon-item-name"><span>scissors</span></div></li>
+                <li class="icon-item" data-class="fa fa-strikethrough"><div class="icon-item-icon"><i class="fa fa-strikethrough"></i></div><div class="icon-item-name"><span>strikethrough</span></div></li>
+                <li class="icon-item" data-class="fa fa-subscript"><div class="icon-item-icon"><i class="fa fa-subscript"></i></div><div class="icon-item-name"><span>subscript</span></div></li>
+                <li class="icon-item" data-class="fa fa-superscript"><div class="icon-item-icon"><i class="fa fa-superscript"></i></div><div class="icon-item-name"><span>superscript</span></div></li>
+                <li class="icon-item" data-class="fa fa-table"><div class="icon-item-icon"><i class="fa fa-table"></i></div><div class="icon-item-name"><span>table</span></div></li>
+                <li class="icon-item" data-class="fa fa-text-height"><div class="icon-item-icon"><i class="fa fa-text-height"></i></div><div class="icon-item-name"><span>text-height</span></div></li>
+                <li class="icon-item" data-class="fa fa-text-width"><div class="icon-item-icon"><i class="fa fa-text-width"></i></div><div class="icon-item-name"><span>text-width</span></div></li>
+                <li class="icon-item" data-class="fa fa-th"><div class="icon-item-icon"><i class="fa fa-th"></i></div><div class="icon-item-name"><span>th</span></div></li>
+                <li class="icon-item" data-class="fa fa-th-large"><div class="icon-item-icon"><i class="fa fa-th-large"></i></div><div class="icon-item-name"><span>th-large</span></div></li>
+                <li class="icon-item" data-class="fa fa-th-list"><div class="icon-item-icon"><i class="fa fa-th-list"></i></div><div class="icon-item-name"><span>th-list</span></div></li>
+                <li class="icon-item" data-class="fa fa-underline"><div class="icon-item-icon"><i class="fa fa-underline"></i></div><div class="icon-item-name"><span>underline</span></div></li>
+                <li class="icon-item" data-class="fa fa-undo"><div class="icon-item-icon"><i class="fa fa-undo"></i></div><div class="icon-item-name"><span>undo</span></div></li>
+                <li class="icon-item" data-class="fa fa-unlink"><div class="icon-item-icon"><i class="fa fa-unlink"></i></div><div class="icon-item-name"><span>unlink</span></div></li>
+            </ul>
+        </section>
+        <section id="directional">
+            <h2 class="page-header">Directional Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-angle-double-down"><div class="icon-item-icon"><i class="fa fa-angle-double-down"></i></div><div class="icon-item-name"><span>angle-double-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-double-left"><div class="icon-item-icon"><i class="fa fa-angle-double-left"></i></div><div class="icon-item-name"><span>angle-double-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-double-right"><div class="icon-item-icon"><i class="fa fa-angle-double-right"></i></div><div class="icon-item-name"><span>angle-double-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-double-up"><div class="icon-item-icon"><i class="fa fa-angle-double-up"></i></div><div class="icon-item-name"><span>angle-double-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-down"><div class="icon-item-icon"><i class="fa fa-angle-down"></i></div><div class="icon-item-name"><span>angle-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-left"><div class="icon-item-icon"><i class="fa fa-angle-left"></i></div><div class="icon-item-name"><span>angle-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-right"><div class="icon-item-icon"><i class="fa fa-angle-right"></i></div><div class="icon-item-name"><span>angle-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-angle-up"><div class="icon-item-icon"><i class="fa fa-angle-up"></i></div><div class="icon-item-name"><span>angle-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-down"><div class="icon-item-icon"><i class="fa fa-arrow-circle-down"></i></div><div class="icon-item-name"><span>arrow-circle-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-left"><div class="icon-item-icon"><i class="fa fa-arrow-circle-left"></i></div><div class="icon-item-name"><span>arrow-circle-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-o-down"><div class="icon-item-icon"><i class="fa fa-arrow-circle-o-down"></i></div><div class="icon-item-name"><span>arrow-circle-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-o-left"><div class="icon-item-icon"><i class="fa fa-arrow-circle-o-left"></i></div><div class="icon-item-name"><span>arrow-circle-o-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-o-right"><div class="icon-item-icon"><i class="fa fa-arrow-circle-o-right"></i></div><div class="icon-item-name"><span>arrow-circle-o-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-o-up"><div class="icon-item-icon"><i class="fa fa-arrow-circle-o-up"></i></div><div class="icon-item-name"><span>arrow-circle-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-right"><div class="icon-item-icon"><i class="fa fa-arrow-circle-right"></i></div><div class="icon-item-name"><span>arrow-circle-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-circle-up"><div class="icon-item-icon"><i class="fa fa-arrow-circle-up"></i></div><div class="icon-item-name"><span>arrow-circle-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-down"><div class="icon-item-icon"><i class="fa fa-arrow-down"></i></div><div class="icon-item-name"><span>arrow-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-left"><div class="icon-item-icon"><i class="fa fa-arrow-left"></i></div><div class="icon-item-name"><span>arrow-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-right"><div class="icon-item-icon"><i class="fa fa-arrow-right"></i></div><div class="icon-item-name"><span>arrow-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrow-up"><div class="icon-item-icon"><i class="fa fa-arrow-up"></i></div><div class="icon-item-name"><span>arrow-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows"><div class="icon-item-icon"><i class="fa fa-arrows"></i></div><div class="icon-item-name"><span>arrows</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows-alt"><div class="icon-item-icon"><i class="fa fa-arrows-alt"></i></div><div class="icon-item-name"><span>arrows-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows-h"><div class="icon-item-icon"><i class="fa fa-arrows-h"></i></div><div class="icon-item-name"><span>arrows-h</span></div></li>
+                <li class="icon-item" data-class="fa fa-arrows-v"><div class="icon-item-icon"><i class="fa fa-arrows-v"></i></div><div class="icon-item-name"><span>arrows-v</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-down"><div class="icon-item-icon"><i class="fa fa-caret-down"></i></div><div class="icon-item-name"><span>caret-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-left"><div class="icon-item-icon"><i class="fa fa-caret-left"></i></div><div class="icon-item-name"><span>caret-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-right"><div class="icon-item-icon"><i class="fa fa-caret-right"></i></div><div class="icon-item-name"><span>caret-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-down"><div class="icon-item-icon"><i class="fa fa-caret-square-o-down"></i></div><div class="icon-item-name"><span>caret-square-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-left"><div class="icon-item-icon"><i class="fa fa-caret-square-o-left"></i></div><div class="icon-item-name"><span>caret-square-o-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-right"><div class="icon-item-icon"><i class="fa fa-caret-square-o-right"></i></div><div class="icon-item-name"><span>caret-square-o-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-square-o-up"><div class="icon-item-icon"><i class="fa fa-caret-square-o-up"></i></div><div class="icon-item-name"><span>caret-square-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-caret-up"><div class="icon-item-icon"><i class="fa fa-caret-up"></i></div><div class="icon-item-name"><span>caret-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-circle-down"><div class="icon-item-icon"><i class="fa fa-chevron-circle-down"></i></div><div class="icon-item-name"><span>chevron-circle-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-circle-left"><div class="icon-item-icon"><i class="fa fa-chevron-circle-left"></i></div><div class="icon-item-name"><span>chevron-circle-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-circle-right"><div class="icon-item-icon"><i class="fa fa-chevron-circle-right"></i></div><div class="icon-item-name"><span>chevron-circle-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-circle-up"><div class="icon-item-icon"><i class="fa fa-chevron-circle-up"></i></div><div class="icon-item-name"><span>chevron-circle-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-down"><div class="icon-item-icon"><i class="fa fa-chevron-down"></i></div><div class="icon-item-name"><span>chevron-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-left"><div class="icon-item-icon"><i class="fa fa-chevron-left"></i></div><div class="icon-item-name"><span>chevron-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-right"><div class="icon-item-icon"><i class="fa fa-chevron-right"></i></div><div class="icon-item-name"><span>chevron-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-chevron-up"><div class="icon-item-icon"><i class="fa fa-chevron-up"></i></div><div class="icon-item-name"><span>chevron-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-exchange"><div class="icon-item-icon"><i class="fa fa-exchange"></i></div><div class="icon-item-name"><span>exchange</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-down"><div class="icon-item-icon"><i class="fa fa-hand-o-down"></i></div><div class="icon-item-name"><span>hand-o-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-left"><div class="icon-item-icon"><i class="fa fa-hand-o-left"></i></div><div class="icon-item-name"><span>hand-o-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-right"><div class="icon-item-icon"><i class="fa fa-hand-o-right"></i></div><div class="icon-item-name"><span>hand-o-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-hand-o-up"><div class="icon-item-icon"><i class="fa fa-hand-o-up"></i></div><div class="icon-item-name"><span>hand-o-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-long-arrow-down"><div class="icon-item-icon"><i class="fa fa-long-arrow-down"></i></div><div class="icon-item-name"><span>long-arrow-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-long-arrow-left"><div class="icon-item-icon"><i class="fa fa-long-arrow-left"></i></div><div class="icon-item-name"><span>long-arrow-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-long-arrow-right"><div class="icon-item-icon"><i class="fa fa-long-arrow-right"></i></div><div class="icon-item-name"><span>long-arrow-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-long-arrow-up"><div class="icon-item-icon"><i class="fa fa-long-arrow-up"></i></div><div class="icon-item-name"><span>long-arrow-up</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-down"><div class="icon-item-icon"><i class="fa fa-toggle-down"></i></div><div class="icon-item-name"><span>toggle-down</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-left"><div class="icon-item-icon"><i class="fa fa-toggle-left"></i></div><div class="icon-item-name"><span>toggle-left</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-right"><div class="icon-item-icon"><i class="fa fa-toggle-right"></i></div><div class="icon-item-name"><span>toggle-right</span></div></li>
+                <li class="icon-item" data-class="fa fa-toggle-up"><div class="icon-item-icon"><i class="fa fa-toggle-up"></i></div><div class="icon-item-name"><span>toggle-up</span></div></li>
+            </ul>
+        </section>
+        <section id="video-player">
+            <h2 class="page-header">Video Player Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-arrows-alt"><div class="icon-item-icon"><i class="fa fa-arrows-alt"></i></div><div class="icon-item-name"><span>arrows-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-backward"><div class="icon-item-icon"><i class="fa fa-backward"></i></div><div class="icon-item-name"><span>backward</span></div></li>
+                <li class="icon-item" data-class="fa fa-compress"><div class="icon-item-icon"><i class="fa fa-compress"></i></div><div class="icon-item-name"><span>compress</span></div></li>
+                <li class="icon-item" data-class="fa fa-eject"><div class="icon-item-icon"><i class="fa fa-eject"></i></div><div class="icon-item-name"><span>eject</span></div></li>
+                <li class="icon-item" data-class="fa fa-expand"><div class="icon-item-icon"><i class="fa fa-expand"></i></div><div class="icon-item-name"><span>expand</span></div></li>
+                <li class="icon-item" data-class="fa fa-fast-backward"><div class="icon-item-icon"><i class="fa fa-fast-backward"></i></div><div class="icon-item-name"><span>fast-backward</span></div></li>
+                <li class="icon-item" data-class="fa fa-fast-forward"><div class="icon-item-icon"><i class="fa fa-fast-forward"></i></div><div class="icon-item-name"><span>fast-forward</span></div></li>
+                <li class="icon-item" data-class="fa fa-forward"><div class="icon-item-icon"><i class="fa fa-forward"></i></div><div class="icon-item-name"><span>forward</span></div></li>
+                <li class="icon-item" data-class="fa fa-pause"><div class="icon-item-icon"><i class="fa fa-pause"></i></div><div class="icon-item-name"><span>pause</span></div></li>
+                <li class="icon-item" data-class="fa fa-pause-circle"><div class="icon-item-icon"><i class="fa fa-pause-circle"></i></div><div class="icon-item-name"><span>pause-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-pause-circle-o"><div class="icon-item-icon"><i class="fa fa-pause-circle-o"></i></div><div class="icon-item-name"><span>pause-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-play"><div class="icon-item-icon"><i class="fa fa-play"></i></div><div class="icon-item-name"><span>play</span></div></li>
+                <li class="icon-item" data-class="fa fa-play-circle"><div class="icon-item-icon"><i class="fa fa-play-circle"></i></div><div class="icon-item-name"><span>play-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-play-circle-o"><div class="icon-item-icon"><i class="fa fa-play-circle-o"></i></div><div class="icon-item-name"><span>play-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-random"><div class="icon-item-icon"><i class="fa fa-random"></i></div><div class="icon-item-name"><span>random</span></div></li>
+                <li class="icon-item" data-class="fa fa-step-backward"><div class="icon-item-icon"><i class="fa fa-step-backward"></i></div><div class="icon-item-name"><span>step-backward</span></div></li>
+                <li class="icon-item" data-class="fa fa-step-forward"><div class="icon-item-icon"><i class="fa fa-step-forward"></i></div><div class="icon-item-name"><span>step-forward</span></div></li>
+                <li class="icon-item" data-class="fa fa-stop"><div class="icon-item-icon"><i class="fa fa-stop"></i></div><div class="icon-item-name"><span>stop</span></div></li>
+                <li class="icon-item" data-class="fa fa-stop-circle"><div class="icon-item-icon"><i class="fa fa-stop-circle"></i></div><div class="icon-item-name"><span>stop-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-stop-circle-o"><div class="icon-item-icon"><i class="fa fa-stop-circle-o"></i></div><div class="icon-item-name"><span>stop-circle-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-youtube-play"><div class="icon-item-icon"><i class="fa fa-youtube-play"></i></div><div class="icon-item-name"><span>youtube-play</span></div></li>
+            </ul>
+        </section>
+        <section id="brand">
+            <h2 class="page-header">Brand Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-500px"><div class="icon-item-icon"><i class="fa fa-500px"></i></div><div class="icon-item-name"><span>500px</span></div></li>
+                <li class="icon-item" data-class="fa fa-adn"><div class="icon-item-icon"><i class="fa fa-adn"></i></div><div class="icon-item-name"><span>adn</span></div></li>
+                <li class="icon-item" data-class="fa fa-amazon"><div class="icon-item-icon"><i class="fa fa-amazon"></i></div><div class="icon-item-name"><span>amazon</span></div></li>
+                <li class="icon-item" data-class="fa fa-android"><div class="icon-item-icon"><i class="fa fa-android"></i></div><div class="icon-item-name"><span>android</span></div></li>
+                <li class="icon-item" data-class="fa fa-angellist"><div class="icon-item-icon"><i class="fa fa-angellist"></i></div><div class="icon-item-name"><span>angellist</span></div></li>
+                <li class="icon-item" data-class="fa fa-apple"><div class="icon-item-icon"><i class="fa fa-apple"></i></div><div class="icon-item-name"><span>apple</span></div></li>
+                <li class="icon-item" data-class="fa fa-bandcamp"><div class="icon-item-icon"><i class="fa fa-bandcamp"></i></div><div class="icon-item-name"><span>bandcamp</span></div></li>
+                <li class="icon-item" data-class="fa fa-behance"><div class="icon-item-icon"><i class="fa fa-behance"></i></div><div class="icon-item-name"><span>behance</span></div></li>
+                <li class="icon-item" data-class="fa fa-behance-square"><div class="icon-item-icon"><i class="fa fa-behance-square"></i></div><div class="icon-item-name"><span>behance-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-bitbucket"><div class="icon-item-icon"><i class="fa fa-bitbucket"></i></div><div class="icon-item-name"><span>bitbucket</span></div></li>
+                <li class="icon-item" data-class="fa fa-bitbucket-square"><div class="icon-item-icon"><i class="fa fa-bitbucket-square"></i></div><div class="icon-item-name"><span>bitbucket-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-bitcoin"><div class="icon-item-icon"><i class="fa fa-bitcoin"></i></div><div class="icon-item-name"><span>bitcoin</span></div></li>
+                <li class="icon-item" data-class="fa fa-black-tie"><div class="icon-item-icon"><i class="fa fa-black-tie"></i></div><div class="icon-item-name"><span>black-tie</span></div></li>
+                <li class="icon-item" data-class="fa fa-bluetooth"><div class="icon-item-icon"><i class="fa fa-bluetooth"></i></div><div class="icon-item-name"><span>bluetooth</span></div></li>
+                <li class="icon-item" data-class="fa fa-bluetooth-b"><div class="icon-item-icon"><i class="fa fa-bluetooth-b"></i></div><div class="icon-item-name"><span>bluetooth-b</span></div></li>
+                <li class="icon-item" data-class="fa fa-btc"><div class="icon-item-icon"><i class="fa fa-btc"></i></div><div class="icon-item-name"><span>btc</span></div></li>
+                <li class="icon-item" data-class="fa fa-buysellads"><div class="icon-item-icon"><i class="fa fa-buysellads"></i></div><div class="icon-item-name"><span>buysellads</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-amex"><div class="icon-item-icon"><i class="fa fa-cc-amex"></i></div><div class="icon-item-name"><span>cc-amex</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-diners-club"><div class="icon-item-icon"><i class="fa fa-cc-diners-club"></i></div><div class="icon-item-name"><span>cc-diners-club</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-discover"><div class="icon-item-icon"><i class="fa fa-cc-discover"></i></div><div class="icon-item-name"><span>cc-discover</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-jcb"><div class="icon-item-icon"><i class="fa fa-cc-jcb"></i></div><div class="icon-item-name"><span>cc-jcb</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-mastercard"><div class="icon-item-icon"><i class="fa fa-cc-mastercard"></i></div><div class="icon-item-name"><span>cc-mastercard</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-paypal"><div class="icon-item-icon"><i class="fa fa-cc-paypal"></i></div><div class="icon-item-name"><span>cc-paypal</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-stripe"><div class="icon-item-icon"><i class="fa fa-cc-stripe"></i></div><div class="icon-item-name"><span>cc-stripe</span></div></li>
+                <li class="icon-item" data-class="fa fa-cc-visa"><div class="icon-item-icon"><i class="fa fa-cc-visa"></i></div><div class="icon-item-name"><span>cc-visa</span></div></li>
+                <li class="icon-item" data-class="fa fa-chrome"><div class="icon-item-icon"><i class="fa fa-chrome"></i></div><div class="icon-item-name"><span>chrome</span></div></li>
+                <li class="icon-item" data-class="fa fa-codepen"><div class="icon-item-icon"><i class="fa fa-codepen"></i></div><div class="icon-item-name"><span>codepen</span></div></li>
+                <li class="icon-item" data-class="fa fa-codiepie"><div class="icon-item-icon"><i class="fa fa-codiepie"></i></div><div class="icon-item-name"><span>codiepie</span></div></li>
+                <li class="icon-item" data-class="fa fa-connectdevelop"><div class="icon-item-icon"><i class="fa fa-connectdevelop"></i></div><div class="icon-item-name"><span>connectdevelop</span></div></li>
+                <li class="icon-item" data-class="fa fa-contao"><div class="icon-item-icon"><i class="fa fa-contao"></i></div><div class="icon-item-name"><span>contao</span></div></li>
+                <li class="icon-item" data-class="fa fa-css3"><div class="icon-item-icon"><i class="fa fa-css3"></i></div><div class="icon-item-name"><span>css3</span></div></li>
+                <li class="icon-item" data-class="fa fa-dashcube"><div class="icon-item-icon"><i class="fa fa-dashcube"></i></div><div class="icon-item-name"><span>dashcube</span></div></li>
+                <li class="icon-item" data-class="fa fa-delicious"><div class="icon-item-icon"><i class="fa fa-delicious"></i></div><div class="icon-item-name"><span>delicious</span></div></li>
+                <li class="icon-item" data-class="fa fa-deviantart"><div class="icon-item-icon"><i class="fa fa-deviantart"></i></div><div class="icon-item-name"><span>deviantart</span></div></li>
+                <li class="icon-item" data-class="fa fa-digg"><div class="icon-item-icon"><i class="fa fa-digg"></i></div><div class="icon-item-name"><span>digg</span></div></li>
+                <li class="icon-item" data-class="fa fa-dribbble"><div class="icon-item-icon"><i class="fa fa-dribbble"></i></div><div class="icon-item-name"><span>dribbble</span></div></li>
+                <li class="icon-item" data-class="fa fa-dropbox"><div class="icon-item-icon"><i class="fa fa-dropbox"></i></div><div class="icon-item-name"><span>dropbox</span></div></li>
+                <li class="icon-item" data-class="fa fa-drupal"><div class="icon-item-icon"><i class="fa fa-drupal"></i></div><div class="icon-item-name"><span>drupal</span></div></li>
+                <li class="icon-item" data-class="fa fa-edge"><div class="icon-item-icon"><i class="fa fa-edge"></i></div><div class="icon-item-name"><span>edge</span></div></li>
+                <li class="icon-item" data-class="fa fa-eercast"><div class="icon-item-icon"><i class="fa fa-eercast"></i></div><div class="icon-item-name"><span>eercast</span></div></li>
+                <li class="icon-item" data-class="fa fa-empire"><div class="icon-item-icon"><i class="fa fa-empire"></i></div><div class="icon-item-name"><span>empire</span></div></li>
+                <li class="icon-item" data-class="fa fa-envira"><div class="icon-item-icon"><i class="fa fa-envira"></i></div><div class="icon-item-name"><span>envira</span></div></li>
+                <li class="icon-item" data-class="fa fa-etsy"><div class="icon-item-icon"><i class="fa fa-etsy"></i></div><div class="icon-item-name"><span>etsy</span></div></li>
+                <li class="icon-item" data-class="fa fa-expeditedssl"><div class="icon-item-icon"><i class="fa fa-expeditedssl"></i></div><div class="icon-item-name"><span>expeditedssl</span></div></li>
+                <li class="icon-item" data-class="fa fa-fa"><div class="icon-item-icon"><i class="fa fa-fa"></i></div><div class="icon-item-name"><span>fa</span></div></li>
+                <li class="icon-item" data-class="fa fa-facebook"><div class="icon-item-icon"><i class="fa fa-facebook"></i></div><div class="icon-item-name"><span>facebook</span></div></li>
+                <li class="icon-item" data-class="fa fa-facebook-f"><div class="icon-item-icon"><i class="fa fa-facebook-f"></i></div><div class="icon-item-name"><span>facebook-f</span></div></li>
+                <li class="icon-item" data-class="fa fa-facebook-official"><div class="icon-item-icon"><i class="fa fa-facebook-official"></i></div><div class="icon-item-name"><span>facebook-official</span></div></li>
+                <li class="icon-item" data-class="fa fa-facebook-square"><div class="icon-item-icon"><i class="fa fa-facebook-square"></i></div><div class="icon-item-name"><span>facebook-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-firefox"><div class="icon-item-icon"><i class="fa fa-firefox"></i></div><div class="icon-item-name"><span>firefox</span></div></li>
+                <li class="icon-item" data-class="fa fa-first-order"><div class="icon-item-icon"><i class="fa fa-first-order"></i></div><div class="icon-item-name"><span>first-order</span></div></li>
+                <li class="icon-item" data-class="fa fa-flickr"><div class="icon-item-icon"><i class="fa fa-flickr"></i></div><div class="icon-item-name"><span>flickr</span></div></li>
+                <li class="icon-item" data-class="fa fa-font-awesome"><div class="icon-item-icon"><i class="fa fa-font-awesome"></i></div><div class="icon-item-name"><span>font-awesome</span></div></li>
+                <li class="icon-item" data-class="fa fa-fonticons"><div class="icon-item-icon"><i class="fa fa-fonticons"></i></div><div class="icon-item-name"><span>fonticons</span></div></li>
+                <li class="icon-item" data-class="fa fa-fort-awesome"><div class="icon-item-icon"><i class="fa fa-fort-awesome"></i></div><div class="icon-item-name"><span>fort-awesome</span></div></li>
+                <li class="icon-item" data-class="fa fa-forumbee"><div class="icon-item-icon"><i class="fa fa-forumbee"></i></div><div class="icon-item-name"><span>forumbee</span></div></li>
+                <li class="icon-item" data-class="fa fa-foursquare"><div class="icon-item-icon"><i class="fa fa-foursquare"></i></div><div class="icon-item-name"><span>foursquare</span></div></li>
+                <li class="icon-item" data-class="fa fa-free-code-camp"><div class="icon-item-icon"><i class="fa fa-free-code-camp"></i></div><div class="icon-item-name"><span>free-code-camp</span></div></li>
+                <li class="icon-item" data-class="fa fa-ge"><div class="icon-item-icon"><i class="fa fa-ge"></i></div><div class="icon-item-name"><span>ge</span></div></li>
+                <li class="icon-item" data-class="fa fa-get-pocket"><div class="icon-item-icon"><i class="fa fa-get-pocket"></i></div><div class="icon-item-name"><span>get-pocket</span></div></li>
+                <li class="icon-item" data-class="fa fa-gg"><div class="icon-item-icon"><i class="fa fa-gg"></i></div><div class="icon-item-name"><span>gg</span></div></li>
+                <li class="icon-item" data-class="fa fa-gg-circle"><div class="icon-item-icon"><i class="fa fa-gg-circle"></i></div><div class="icon-item-name"><span>gg-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-git"><div class="icon-item-icon"><i class="fa fa-git"></i></div><div class="icon-item-name"><span>git</span></div></li>
+                <li class="icon-item" data-class="fa fa-git-square"><div class="icon-item-icon"><i class="fa fa-git-square"></i></div><div class="icon-item-name"><span>git-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-github"><div class="icon-item-icon"><i class="fa fa-github"></i></div><div class="icon-item-name"><span>github</span></div></li>
+                <li class="icon-item" data-class="fa fa-github-alt"><div class="icon-item-icon"><i class="fa fa-github-alt"></i></div><div class="icon-item-name"><span>github-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-github-square"><div class="icon-item-icon"><i class="fa fa-github-square"></i></div><div class="icon-item-name"><span>github-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-gitlab"><div class="icon-item-icon"><i class="fa fa-gitlab"></i></div><div class="icon-item-name"><span>gitlab</span></div></li>
+                <li class="icon-item" data-class="fa fa-gittip"><div class="icon-item-icon"><i class="fa fa-gittip"></i></div><div class="icon-item-name"><span>gittip</span></div></li>
+                <li class="icon-item" data-class="fa fa-glide"><div class="icon-item-icon"><i class="fa fa-glide"></i></div><div class="icon-item-name"><span>glide</span></div></li>
+                <li class="icon-item" data-class="fa fa-glide-g"><div class="icon-item-icon"><i class="fa fa-glide-g"></i></div><div class="icon-item-name"><span>glide-g</span></div></li>
+                <li class="icon-item" data-class="fa fa-google"><div class="icon-item-icon"><i class="fa fa-google"></i></div><div class="icon-item-name"><span>google</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-plus"><div class="icon-item-icon"><i class="fa fa-google-plus"></i></div><div class="icon-item-name"><span>google-plus</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-plus-circle"><div class="icon-item-icon"><i class="fa fa-google-plus-circle"></i></div><div class="icon-item-name"><span>google-plus-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-plus-official"><div class="icon-item-icon"><i class="fa fa-google-plus-official"></i></div><div class="icon-item-name"><span>google-plus-official</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-plus-square"><div class="icon-item-icon"><i class="fa fa-google-plus-square"></i></div><div class="icon-item-name"><span>google-plus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-google-wallet"><div class="icon-item-icon"><i class="fa fa-google-wallet"></i></div><div class="icon-item-name"><span>google-wallet</span></div></li>
+                <li class="icon-item" data-class="fa fa-gratipay"><div class="icon-item-icon"><i class="fa fa-gratipay"></i></div><div class="icon-item-name"><span>gratipay</span></div></li>
+                <li class="icon-item" data-class="fa fa-grav"><div class="icon-item-icon"><i class="fa fa-grav"></i></div><div class="icon-item-name"><span>grav</span></div></li>
+                <li class="icon-item" data-class="fa fa-hacker-news"><div class="icon-item-icon"><i class="fa fa-hacker-news"></i></div><div class="icon-item-name"><span>hacker-news</span></div></li>
+                <li class="icon-item" data-class="fa fa-houzz"><div class="icon-item-icon"><i class="fa fa-houzz"></i></div><div class="icon-item-name"><span>houzz</span></div></li>
+                <li class="icon-item" data-class="fa fa-html5"><div class="icon-item-icon"><i class="fa fa-html5"></i></div><div class="icon-item-name"><span>html5</span></div></li>
+                <li class="icon-item" data-class="fa fa-imdb"><div class="icon-item-icon"><i class="fa fa-imdb"></i></div><div class="icon-item-name"><span>imdb</span></div></li>
+                <li class="icon-item" data-class="fa fa-instagram"><div class="icon-item-icon"><i class="fa fa-instagram"></i></div><div class="icon-item-name"><span>instagram</span></div></li>
+                <li class="icon-item" data-class="fa fa-internet-explorer"><div class="icon-item-icon"><i class="fa fa-internet-explorer"></i></div><div class="icon-item-name"><span>internet-explorer</span></div></li>
+                <li class="icon-item" data-class="fa fa-ioxhost"><div class="icon-item-icon"><i class="fa fa-ioxhost"></i></div><div class="icon-item-name"><span>ioxhost</span></div></li>
+                <li class="icon-item" data-class="fa fa-joomla"><div class="icon-item-icon"><i class="fa fa-joomla"></i></div><div class="icon-item-name"><span>joomla</span></div></li>
+                <li class="icon-item" data-class="fa fa-jsfiddle"><div class="icon-item-icon"><i class="fa fa-jsfiddle"></i></div><div class="icon-item-name"><span>jsfiddle</span></div></li>
+                <li class="icon-item" data-class="fa fa-lastfm"><div class="icon-item-icon"><i class="fa fa-lastfm"></i></div><div class="icon-item-name"><span>lastfm</span></div></li>
+                <li class="icon-item" data-class="fa fa-lastfm-square"><div class="icon-item-icon"><i class="fa fa-lastfm-square"></i></div><div class="icon-item-name"><span>lastfm-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-leanpub"><div class="icon-item-icon"><i class="fa fa-leanpub"></i></div><div class="icon-item-name"><span>leanpub</span></div></li>
+                <li class="icon-item" data-class="fa fa-linkedin"><div class="icon-item-icon"><i class="fa fa-linkedin"></i></div><div class="icon-item-name"><span>linkedin</span></div></li>
+                <li class="icon-item" data-class="fa fa-linkedin-square"><div class="icon-item-icon"><i class="fa fa-linkedin-square"></i></div><div class="icon-item-name"><span>linkedin-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-linode"><div class="icon-item-icon"><i class="fa fa-linode"></i></div><div class="icon-item-name"><span>linode</span></div></li>
+                <li class="icon-item" data-class="fa fa-linux"><div class="icon-item-icon"><i class="fa fa-linux"></i></div><div class="icon-item-name"><span>linux</span></div></li>
+                <li class="icon-item" data-class="fa fa-maxcdn"><div class="icon-item-icon"><i class="fa fa-maxcdn"></i></div><div class="icon-item-name"><span>maxcdn</span></div></li>
+                <li class="icon-item" data-class="fa fa-meanpath"><div class="icon-item-icon"><i class="fa fa-meanpath"></i></div><div class="icon-item-name"><span>meanpath</span></div></li>
+                <li class="icon-item" data-class="fa fa-medium"><div class="icon-item-icon"><i class="fa fa-medium"></i></div><div class="icon-item-name"><span>medium</span></div></li>
+                <li class="icon-item" data-class="fa fa-meetup"><div class="icon-item-icon"><i class="fa fa-meetup"></i></div><div class="icon-item-name"><span>meetup</span></div></li>
+                <li class="icon-item" data-class="fa fa-mixcloud"><div class="icon-item-icon"><i class="fa fa-mixcloud"></i></div><div class="icon-item-name"><span>mixcloud</span></div></li>
+                <li class="icon-item" data-class="fa fa-modx"><div class="icon-item-icon"><i class="fa fa-modx"></i></div><div class="icon-item-name"><span>modx</span></div></li>
+                <li class="icon-item" data-class="fa fa-odnoklassniki"><div class="icon-item-icon"><i class="fa fa-odnoklassniki"></i></div><div class="icon-item-name"><span>odnoklassniki</span></div></li>
+                <li class="icon-item" data-class="fa fa-odnoklassniki-square"><div class="icon-item-icon"><i class="fa fa-odnoklassniki-square"></i></div><div class="icon-item-name"><span>odnoklassniki-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-opencart"><div class="icon-item-icon"><i class="fa fa-opencart"></i></div><div class="icon-item-name"><span>opencart</span></div></li>
+                <li class="icon-item" data-class="fa fa-openid"><div class="icon-item-icon"><i class="fa fa-openid"></i></div><div class="icon-item-name"><span>openid</span></div></li>
+                <li class="icon-item" data-class="fa fa-opera"><div class="icon-item-icon"><i class="fa fa-opera"></i></div><div class="icon-item-name"><span>opera</span></div></li>
+                <li class="icon-item" data-class="fa fa-optin-monster"><div class="icon-item-icon"><i class="fa fa-optin-monster"></i></div><div class="icon-item-name"><span>optin-monster</span></div></li>
+                <li class="icon-item" data-class="fa fa-pagelines"><div class="icon-item-icon"><i class="fa fa-pagelines"></i></div><div class="icon-item-name"><span>pagelines</span></div></li>
+                <li class="icon-item" data-class="fa fa-paypal"><div class="icon-item-icon"><i class="fa fa-paypal"></i></div><div class="icon-item-name"><span>paypal</span></div></li>
+                <li class="icon-item" data-class="fa fa-pied-piper"><div class="icon-item-icon"><i class="fa fa-pied-piper"></i></div><div class="icon-item-name"><span>pied-piper</span></div></li>
+                <li class="icon-item" data-class="fa fa-pied-piper-alt"><div class="icon-item-icon"><i class="fa fa-pied-piper-alt"></i></div><div class="icon-item-name"><span>pied-piper-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-pied-piper-pp"><div class="icon-item-icon"><i class="fa fa-pied-piper-pp"></i></div><div class="icon-item-name"><span>pied-piper-pp</span></div></li>
+                <li class="icon-item" data-class="fa fa-pinterest"><div class="icon-item-icon"><i class="fa fa-pinterest"></i></div><div class="icon-item-name"><span>pinterest</span></div></li>
+                <li class="icon-item" data-class="fa fa-pinterest-p"><div class="icon-item-icon"><i class="fa fa-pinterest-p"></i></div><div class="icon-item-name"><span>pinterest-p</span></div></li>
+                <li class="icon-item" data-class="fa fa-pinterest-square"><div class="icon-item-icon"><i class="fa fa-pinterest-square"></i></div><div class="icon-item-name"><span>pinterest-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-product-hunt"><div class="icon-item-icon"><i class="fa fa-product-hunt"></i></div><div class="icon-item-name"><span>product-hunt</span></div></li>
+                <li class="icon-item" data-class="fa fa-qq"><div class="icon-item-icon"><i class="fa fa-qq"></i></div><div class="icon-item-name"><span>qq</span></div></li>
+                <li class="icon-item" data-class="fa fa-quora"><div class="icon-item-icon"><i class="fa fa-quora"></i></div><div class="icon-item-name"><span>quora</span></div></li>
+                <li class="icon-item" data-class="fa fa-ra"><div class="icon-item-icon"><i class="fa fa-ra"></i></div><div class="icon-item-name"><span>ra</span></div></li>
+                <li class="icon-item" data-class="fa fa-ravelry"><div class="icon-item-icon"><i class="fa fa-ravelry"></i></div><div class="icon-item-name"><span>ravelry</span></div></li>
+                <li class="icon-item" data-class="fa fa-rebel"><div class="icon-item-icon"><i class="fa fa-rebel"></i></div><div class="icon-item-name"><span>rebel</span></div></li>
+                <li class="icon-item" data-class="fa fa-reddit"><div class="icon-item-icon"><i class="fa fa-reddit"></i></div><div class="icon-item-name"><span>reddit</span></div></li>
+                <li class="icon-item" data-class="fa fa-reddit-alien"><div class="icon-item-icon"><i class="fa fa-reddit-alien"></i></div><div class="icon-item-name"><span>reddit-alien</span></div></li>
+                <li class="icon-item" data-class="fa fa-reddit-square"><div class="icon-item-icon"><i class="fa fa-reddit-square"></i></div><div class="icon-item-name"><span>reddit-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-renren"><div class="icon-item-icon"><i class="fa fa-renren"></i></div><div class="icon-item-name"><span>renren</span></div></li>
+                <li class="icon-item" data-class="fa fa-resistance"><div class="icon-item-icon"><i class="fa fa-resistance"></i></div><div class="icon-item-name"><span>resistance</span></div></li>
+                <li class="icon-item" data-class="fa fa-safari"><div class="icon-item-icon"><i class="fa fa-safari"></i></div><div class="icon-item-name"><span>safari</span></div></li>
+                <li class="icon-item" data-class="fa fa-scribd"><div class="icon-item-icon"><i class="fa fa-scribd"></i></div><div class="icon-item-name"><span>scribd</span></div></li>
+                <li class="icon-item" data-class="fa fa-sellsy"><div class="icon-item-icon"><i class="fa fa-sellsy"></i></div><div class="icon-item-name"><span>sellsy</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-alt"><div class="icon-item-icon"><i class="fa fa-share-alt"></i></div><div class="icon-item-name"><span>share-alt</span></div></li>
+                <li class="icon-item" data-class="fa fa-share-alt-square"><div class="icon-item-icon"><i class="fa fa-share-alt-square"></i></div><div class="icon-item-name"><span>share-alt-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-shirtsinbulk"><div class="icon-item-icon"><i class="fa fa-shirtsinbulk"></i></div><div class="icon-item-name"><span>shirtsinbulk</span></div></li>
+                <li class="icon-item" data-class="fa fa-simplybuilt"><div class="icon-item-icon"><i class="fa fa-simplybuilt"></i></div><div class="icon-item-name"><span>simplybuilt</span></div></li>
+                <li class="icon-item" data-class="fa fa-skyatlas"><div class="icon-item-icon"><i class="fa fa-skyatlas"></i></div><div class="icon-item-name"><span>skyatlas</span></div></li>
+                <li class="icon-item" data-class="fa fa-skype"><div class="icon-item-icon"><i class="fa fa-skype"></i></div><div class="icon-item-name"><span>skype</span></div></li>
+                <li class="icon-item" data-class="fa fa-slack"><div class="icon-item-icon"><i class="fa fa-slack"></i></div><div class="icon-item-name"><span>slack</span></div></li>
+                <li class="icon-item" data-class="fa fa-slideshare"><div class="icon-item-icon"><i class="fa fa-slideshare"></i></div><div class="icon-item-name"><span>slideshare</span></div></li>
+                <li class="icon-item" data-class="fa fa-snapchat"><div class="icon-item-icon"><i class="fa fa-snapchat"></i></div><div class="icon-item-name"><span>snapchat</span></div></li>
+                <li class="icon-item" data-class="fa fa-snapchat-ghost"><div class="icon-item-icon"><i class="fa fa-snapchat-ghost"></i></div><div class="icon-item-name"><span>snapchat-ghost</span></div></li>
+                <li class="icon-item" data-class="fa fa-snapchat-square"><div class="icon-item-icon"><i class="fa fa-snapchat-square"></i></div><div class="icon-item-name"><span>snapchat-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-soundcloud"><div class="icon-item-icon"><i class="fa fa-soundcloud"></i></div><div class="icon-item-name"><span>soundcloud</span></div></li>
+                <li class="icon-item" data-class="fa fa-spotify"><div class="icon-item-icon"><i class="fa fa-spotify"></i></div><div class="icon-item-name"><span>spotify</span></div></li>
+                <li class="icon-item" data-class="fa fa-stack-exchange"><div class="icon-item-icon"><i class="fa fa-stack-exchange"></i></div><div class="icon-item-name"><span>stack-exchange</span></div></li>
+                <li class="icon-item" data-class="fa fa-stack-overflow"><div class="icon-item-icon"><i class="fa fa-stack-overflow"></i></div><div class="icon-item-name"><span>stack-overflow</span></div></li>
+                <li class="icon-item" data-class="fa fa-steam"><div class="icon-item-icon"><i class="fa fa-steam"></i></div><div class="icon-item-name"><span>steam</span></div></li>
+                <li class="icon-item" data-class="fa fa-steam-square"><div class="icon-item-icon"><i class="fa fa-steam-square"></i></div><div class="icon-item-name"><span>steam-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-stumbleupon"><div class="icon-item-icon"><i class="fa fa-stumbleupon"></i></div><div class="icon-item-name"><span>stumbleupon</span></div></li>
+                <li class="icon-item" data-class="fa fa-stumbleupon-circle"><div class="icon-item-icon"><i class="fa fa-stumbleupon-circle"></i></div><div class="icon-item-name"><span>stumbleupon-circle</span></div></li>
+                <li class="icon-item" data-class="fa fa-superpowers"><div class="icon-item-icon"><i class="fa fa-superpowers"></i></div><div class="icon-item-name"><span>superpowers</span></div></li>
+                <li class="icon-item" data-class="fa fa-telegram"><div class="icon-item-icon"><i class="fa fa-telegram"></i></div><div class="icon-item-name"><span>telegram</span></div></li>
+                <li class="icon-item" data-class="fa fa-tencent-weibo"><div class="icon-item-icon"><i class="fa fa-tencent-weibo"></i></div><div class="icon-item-name"><span>tencent-weibo</span></div></li>
+                <li class="icon-item" data-class="fa fa-themeisle"><div class="icon-item-icon"><i class="fa fa-themeisle"></i></div><div class="icon-item-name"><span>themeisle</span></div></li>
+                <li class="icon-item" data-class="fa fa-trello"><div class="icon-item-icon"><i class="fa fa-trello"></i></div><div class="icon-item-name"><span>trello</span></div></li>
+                <li class="icon-item" data-class="fa fa-tripadvisor"><div class="icon-item-icon"><i class="fa fa-tripadvisor"></i></div><div class="icon-item-name"><span>tripadvisor</span></div></li>
+                <li class="icon-item" data-class="fa fa-tumblr"><div class="icon-item-icon"><i class="fa fa-tumblr"></i></div><div class="icon-item-name"><span>tumblr</span></div></li>
+                <li class="icon-item" data-class="fa fa-tumblr-square"><div class="icon-item-icon"><i class="fa fa-tumblr-square"></i></div><div class="icon-item-name"><span>tumblr-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-twitch"><div class="icon-item-icon"><i class="fa fa-twitch"></i></div><div class="icon-item-name"><span>twitch</span></div></li>
+                <li class="icon-item" data-class="fa fa-twitter"><div class="icon-item-icon"><i class="fa fa-twitter"></i></div><div class="icon-item-name"><span>twitter</span></div></li>
+                <li class="icon-item" data-class="fa fa-twitter-square"><div class="icon-item-icon"><i class="fa fa-twitter-square"></i></div><div class="icon-item-name"><span>twitter-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-usb"><div class="icon-item-icon"><i class="fa fa-usb"></i></div><div class="icon-item-name"><span>usb</span></div></li>
+                <li class="icon-item" data-class="fa fa-viacoin"><div class="icon-item-icon"><i class="fa fa-viacoin"></i></div><div class="icon-item-name"><span>viacoin</span></div></li>
+                <li class="icon-item" data-class="fa fa-viadeo"><div class="icon-item-icon"><i class="fa fa-viadeo"></i></div><div class="icon-item-name"><span>viadeo</span></div></li>
+                <li class="icon-item" data-class="fa fa-viadeo-square"><div class="icon-item-icon"><i class="fa fa-viadeo-square"></i></div><div class="icon-item-name"><span>viadeo-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-vimeo"><div class="icon-item-icon"><i class="fa fa-vimeo"></i></div><div class="icon-item-name"><span>vimeo</span></div></li>
+                <li class="icon-item" data-class="fa fa-vimeo-square"><div class="icon-item-icon"><i class="fa fa-vimeo-square"></i></div><div class="icon-item-name"><span>vimeo-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-vine"><div class="icon-item-icon"><i class="fa fa-vine"></i></div><div class="icon-item-name"><span>vine</span></div></li>
+                <li class="icon-item" data-class="fa fa-vk"><div class="icon-item-icon"><i class="fa fa-vk"></i></div><div class="icon-item-name"><span>vk</span></div></li>
+                <li class="icon-item" data-class="fa fa-wechat"><div class="icon-item-icon"><i class="fa fa-wechat"></i></div><div class="icon-item-name"><span>wechat</span></div></li>
+                <li class="icon-item" data-class="fa fa-weibo"><div class="icon-item-icon"><i class="fa fa-weibo"></i></div><div class="icon-item-name"><span>weibo</span></div></li>
+                <li class="icon-item" data-class="fa fa-weixin"><div class="icon-item-icon"><i class="fa fa-weixin"></i></div><div class="icon-item-name"><span>weixin</span></div></li>
+                <li class="icon-item" data-class="fa fa-whatsapp"><div class="icon-item-icon"><i class="fa fa-whatsapp"></i></div><div class="icon-item-name"><span>whatsapp</span></div></li>
+                <li class="icon-item" data-class="fa fa-wikipedia-w"><div class="icon-item-icon"><i class="fa fa-wikipedia-w"></i></div><div class="icon-item-name"><span>wikipedia-w</span></div></li>
+                <li class="icon-item" data-class="fa fa-windows"><div class="icon-item-icon"><i class="fa fa-windows"></i></div><div class="icon-item-name"><span>windows</span></div></li>
+                <li class="icon-item" data-class="fa fa-wordpress"><div class="icon-item-icon"><i class="fa fa-wordpress"></i></div><div class="icon-item-name"><span>wordpress</span></div></li>
+                <li class="icon-item" data-class="fa fa-wpbeginner"><div class="icon-item-icon"><i class="fa fa-wpbeginner"></i></div><div class="icon-item-name"><span>wpbeginner</span></div></li>
+                <li class="icon-item" data-class="fa fa-wpexplorer"><div class="icon-item-icon"><i class="fa fa-wpexplorer"></i></div><div class="icon-item-name"><span>wpexplorer</span></div></li>
+                <li class="icon-item" data-class="fa fa-wpforms"><div class="icon-item-icon"><i class="fa fa-wpforms"></i></div><div class="icon-item-name"><span>wpforms</span></div></li>
+                <li class="icon-item" data-class="fa fa-xing"><div class="icon-item-icon"><i class="fa fa-xing"></i></div><div class="icon-item-name"><span>xing</span></div></li>
+                <li class="icon-item" data-class="fa fa-xing-square"><div class="icon-item-icon"><i class="fa fa-xing-square"></i></div><div class="icon-item-name"><span>xing-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-y-combinator"><div class="icon-item-icon"><i class="fa fa-y-combinator"></i></div><div class="icon-item-name"><span>y-combinator</span></div></li>
+                <li class="icon-item" data-class="fa fa-y-combinator-square"><div class="icon-item-icon"><i class="fa fa-y-combinator-square"></i></div><div class="icon-item-name"><span>y-combinator-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-yahoo"><div class="icon-item-icon"><i class="fa fa-yahoo"></i></div><div class="icon-item-name"><span>yahoo</span></div></li>
+                <li class="icon-item" data-class="fa fa-yc"><div class="icon-item-icon"><i class="fa fa-yc"></i></div><div class="icon-item-name"><span>yc</span></div></li>
+                <li class="icon-item" data-class="fa fa-yc-square"><div class="icon-item-icon"><i class="fa fa-yc-square"></i></div><div class="icon-item-name"><span>yc-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-yelp"><div class="icon-item-icon"><i class="fa fa-yelp"></i></div><div class="icon-item-name"><span>yelp</span></div></li>
+                <li class="icon-item" data-class="fa fa-yoast"><div class="icon-item-icon"><i class="fa fa-yoast"></i></div><div class="icon-item-name"><span>yoast</span></div></li>
+                <li class="icon-item" data-class="fa fa-youtube"><div class="icon-item-icon"><i class="fa fa-youtube"></i></div><div class="icon-item-name"><span>youtube</span></div></li>
+                <li class="icon-item" data-class="fa fa-youtube-play"><div class="icon-item-icon"><i class="fa fa-youtube-play"></i></div><div class="icon-item-name"><span>youtube-play</span></div></li>
+                <li class="icon-item" data-class="fa fa-youtube-square"><div class="icon-item-icon"><i class="fa fa-youtube-square"></i></div><div class="icon-item-name"><span>youtube-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-warning"><div class="icon-item-icon"><i class="fa fa-warning"></i></div><div class="icon-item-name"><span>warning</span></div></li>
+            </ul>
+        </section>
+        <section id="medical">
+            <h2 class="page-header">Medical Icons</h2>
+            <ul class="icon-list">
+                <li class="icon-item" data-class="fa fa-ambulance"><div class="icon-item-icon"><i class="fa fa-ambulance"></i></div><div class="icon-item-name"><span>ambulance</span></div></li>
+                <li class="icon-item" data-class="fa fa-h-square"><div class="icon-item-icon"><i class="fa fa-h-square"></i></div><div class="icon-item-name"><span>h-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-heart"><div class="icon-item-icon"><i class="fa fa-heart"></i></div><div class="icon-item-name"><span>heart</span></div></li>
+                <li class="icon-item" data-class="fa fa-heart-o"><div class="icon-item-icon"><i class="fa fa-heart-o"></i></div><div class="icon-item-name"><span>heart-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-heartbeat"><div class="icon-item-icon"><i class="fa fa-heartbeat"></i></div><div class="icon-item-name"><span>heartbeat</span></div></li>
+                <li class="icon-item" data-class="fa fa-hospital-o"><div class="icon-item-icon"><i class="fa fa-hospital-o"></i></div><div class="icon-item-name"><span>hospital-o</span></div></li>
+                <li class="icon-item" data-class="fa fa-medkit"><div class="icon-item-icon"><i class="fa fa-medkit"></i></div><div class="icon-item-name"><span>medkit</span></div></li>
+                <li class="icon-item" data-class="fa fa-plus-square"><div class="icon-item-icon"><i class="fa fa-plus-square"></i></div><div class="icon-item-name"><span>plus-square</span></div></li>
+                <li class="icon-item" data-class="fa fa-stethoscope"><div class="icon-item-icon"><i class="fa fa-stethoscope"></i></div><div class="icon-item-name"><span>stethoscope</span></div></li>
+                <li class="icon-item" data-class="fa fa-user-md"><div class="icon-item-icon"><i class="fa fa-user-md"></i></div><div class="icon-item-name"><span>user-md</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair"><div class="icon-item-icon"><i class="fa fa-wheelchair"></i></div><div class="icon-item-name"><span>wheelchair</span></div></li>
+                <li class="icon-item" data-class="fa fa-wheelchair-alt"><div class="icon-item-icon"><i class="fa fa-wheelchair-alt"></i></div><div class="icon-item-name"><span>wheelchair-alt</span></div></li>
+            </ul>
+        </section>
+    </article>
+</div>
+
+<script>
+    !(function() {
+        var mode = ~location.search.indexOf('element') ? 0 : 1;
+        var list = document.querySelectorAll('li.icon-item');
+        for (let i = 0; i < list.length; i++) {
+            let li = list[i];
+            li.addEventListener('click', function(e) {
+                let cls = e.currentTarget.dataset.class;
+                let content = mode ? cls : '<i class="' + cls + '"></i>';
+                copyToClipboard(content);
+            });
+        }
+
+        function select(el) {
+            el.select();
+            el.setSelectionRange(0, el.value.length);
+        }
+
+        function copyText() {
+            document.execCommand('copy');
+        }
+
+        function copyToClipboard(content) {
+            var el = document.createElement('textarea');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            el.setAttribute('readonly', '');
+            el.value = content;
+
+            document.body.appendChild(el);
+
+            select(el);
+            copyText();
+
+            document.body.removeChild(el);
+        }
+    })();
+</script>
+</body>
+</html>
